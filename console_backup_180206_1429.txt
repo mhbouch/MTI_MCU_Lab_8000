@@ -1,0 +1,104 @@
+INFO [nre] Launching Niagara Runtime Environment
+INFO [13:14:19 06-Feb-18 EST][nre] Booting
+INFO [13:14:31 06-Feb-18 EST][sys] Logging initialized
+INFO [13:14:46 06-Feb-18 EST][sys.registry] Up-to-date [275ms]
+INFO [13:14:46 06-Feb-18 EST][sys.registry] Loaded [475ms]
+INFO [13:14:52 06-Feb-18 EST][sys] Niagara runtime booted ("/opt/niagara") on Qnx-TITAN-69A5-D263-B21C-27F9 (34390ms)
+INFO [13:14:52 06-Feb-18 EST][sys] Loading "/home/niagara/stations/MTI_MCU_UP_Standard/config.bog"...
+INFO [13:15:22 06-Feb-18 EST][sys] Loaded (29593ms)
+INFO [13:15:26 06-Feb-18 EST][alarm.database] Loading...
+INFO [13:15:27 06-Feb-18 EST][alarm.database] Loaded [410ms, 16 alarms, 40 pages]
+WARNING [13:15:27 06-Feb-18 EST][platDataRecovery.service] Recovery data detected, replaying...
+INFO [13:15:28 06-Feb-18 EST][sys] DataRecoveryService restoration check complete (2346ms)
+INFO [13:15:40 06-Feb-18 EST][sys] Services Initialized (12118ms)
+INFO [13:15:40 06-Feb-18 EST][sys.mixin] Updated [67ms]
+INFO [13:15:41 06-Feb-18 EST][sys.mixin] Updated [23ms]
+INFO [13:15:42 06-Feb-18 EST][history.db] Starting async warmup of history config index...
+INFO [13:15:42 06-Feb-18 EST][history.db] Async history config index warmup completed in 15 ms.
+INFO [13:15:48 06-Feb-18 EST][web] Jetty web server started on HTTP port 80
+INFO [13:15:48 06-Feb-18 EST][tagdictionary] Niagara tagdictionary is out of date or has been modified.
+INFO [13:15:48 06-Feb-18 EST][tagdictionary] Niagara tagdictionary has been reloaded.
+WARNING [13:15:49 06-Feb-18 EST][bacnet.server] Unable to resolve point ord for Drivers.NdioNetwork.NdioBoard.points.PT_2 [binaryValue:0]: h:9b5
+WARNING [13:15:49 06-Feb-18 EST][bacnet.server] Unable to resolve point ord for Drivers.NdioNetwork.NdioBoard.points.CV2_Analog [analogValue:4]: h:9d4
+INFO [13:15:50 06-Feb-18 EST][NrioNetwork] Opened COM1
+INFO [13:15:50 06-Feb-18 EST][NrioNetwork.unsolicited] NrioUnsolicetedReceive thread started.
+WARNING [13:15:51 06-Feb-18 EST][sys.program] Program not signed. The ability to run unsigned programs will be removed in a future release.
+INFO [13:15:54 06-Feb-18 EST][fox] FOX server started on port [1911]
+INFO [13:15:55 06-Feb-18 EST][sys] Niagara Runtime Environment: 4.3.58.18.1
+INFO [13:15:55 06-Feb-18 EST][sys] *** Station Started (14607ms) [96989ms total] ***
+niagara>INFO [13:15:55 06-Feb-18 EST][sys] Saving station...
+INFO [13:15:57 06-Feb-18 EST][history.db] Saved history archive (183ms)
+INFO [13:15:59 06-Feb-18 EST][sys] Saved /home/niagara/stations/MTI_MCU_UP_Standard/config.bog (4165ms)
+INFO [13:16:15 06-Feb-18 EST][NrioNetwork.wrIo] wrThread running
+INFO [13:28:38 06-Feb-18 EST][fox] Opened: 52db8b610fa251f9afd7a616ef972499ac5fe05b094fea1571 <- 3f55ee361503c8858207f53ec5a845c4ad77850c6f224c950e :: Workbench @ MAXI-PC-01
+INFO [13:41:41 06-Feb-18 EST][sys] Saving station...
+INFO [13:41:42 06-Feb-18 EST][history.db] Saved history archive (76ms)
+INFO [13:41:45 06-Feb-18 EST][sys] Saved /home/niagara/stations/MTI_MCU_UP_Standard/config.bog (2963ms)
+INFO [13:45:35 06-Feb-18 EST][sys] Saving station...
+INFO [13:45:36 06-Feb-18 EST][history.db] Saved history archive (109ms)
+INFO [13:45:38 06-Feb-18 EST][sys] Saved /home/niagara/stations/MTI_MCU_UP_Standard/config.bog (2397ms)
+INFO [13:50:44 06-Feb-18 EST][sys] Saving station...
+INFO [13:50:44 06-Feb-18 EST][history.db] Saved history archive (68ms)
+INFO [13:50:46 06-Feb-18 EST][sys] Saved /home/niagara/stations/MTI_MCU_UP_Standard/config.bog (2404ms)
+java.io.IOException: circuit closed
+	at com.tridium.fox.session.FoxCircuit.assertOpen(FoxCircuit.java:344)
+	at com.tridium.fox.session.FoxCircuit.writeOut(FoxCircuit.java:177)
+	at com.tridium.fox.session.FoxCircuit$CircuitOutputStream.write(FoxCircuit.java:449)
+	at javax.baja.nre.util.FileUtil.pipe(FileUtil.java:129)
+	at com.tridium.fox.sys.file.BFileChannel.read(BFileChannel.java:601)
+	at com.tridium.fox.sys.file.BFileChannel.circuitOpened(BFileChannel.java:135)
+	at com.tridium.fox.sys.BFoxConnection.circuitOpened(BFoxConnection.java:464)
+	at com.tridium.fox.session.SessionCircuits$ServiceThread.run(SessionCircuits.java:316)
+	at java.lang.Thread.run(Thread.java:745)
+INFO [13:57:17 06-Feb-18 EST][fox] Closed: 52db8b610fa251f9afd7a616ef972499ac5fe05b094fea1571 <- 3f55ee361503c8858207f53ec5a845c4ad77850c6f224c950e :: Workbench @ MAXI-PC-01
+INFO [13:57:28 06-Feb-18 EST][fox] Opened: 83e07a854237b4a1b2e5e4ee92f6ff3818c618bb6cac244800 <- 06da327835cc1192466f59eaa0cf142aa181e396a21ce51b5f :: Workbench @ MAXI-PC-01
+INFO [13:57:48 06-Feb-18 EST][fox] Closed: 83e07a854237b4a1b2e5e4ee92f6ff3818c618bb6cac244800 <- 06da327835cc1192466f59eaa0cf142aa181e396a21ce51b5f :: Workbench @ MAXI-PC-01
+INFO [13:57:57 06-Feb-18 EST][fox] Opened: 3bb9c0b98415aea2247921e4d60fe0079c18c41032ff593547 <- 92c75d408ed112263d573089733bd162293436caaa920c7e28 :: Workbench @ MAXI-PC-01
+WARNING [13:59:25 06-Feb-18 EST][hx.px.cache] unresolved: station:|slot:/Drivers/NdioNetwork/NdioBoard/points/E_Stop
+WARNING [14:01:01 06-Feb-18 EST][hx.px.cache] unresolved: station:|slot:/Drivers/NdioNetwork/NdioBoard/points/E_Stop
+INFO [14:01:35 06-Feb-18 EST][sys] Saving station...
+INFO [14:01:36 06-Feb-18 EST][history.db] Saved history archive (114ms)
+INFO [14:01:37 06-Feb-18 EST][sys] Saved /home/niagara/stations/MTI_MCU_UP_Standard/config.bog (2602ms)
+WARNING [14:01:39 06-Feb-18 EST][hx.px.cache] unresolved: station:|slot:/Drivers/NdioNetwork/NdioBoard/points/E_Stop
+INFO [14:03:22 06-Feb-18 EST][sys] Saving station...
+INFO [14:03:23 06-Feb-18 EST][history.db] Saved history archive (66ms)
+INFO [14:03:25 06-Feb-18 EST][sys] Saved /home/niagara/stations/MTI_MCU_UP_Standard/config.bog (2825ms)
+INFO [14:15:17 06-Feb-18 EST][sys] Saving station...
+INFO [14:15:18 06-Feb-18 EST][history.db] Saved history archive (73ms)
+INFO [14:15:20 06-Feb-18 EST][sys] Saved /home/niagara/stations/MTI_MCU_UP_Standard/config.bog (2678ms)
+niagara>INFO [14:15:59 06-Feb-18 EST][sys] Saving station...
+INFO [14:16:00 06-Feb-18 EST][history.db] Saved history archive (77ms)
+INFO [14:16:01 06-Feb-18 EST][sys] Saved /home/niagara/stations/MTI_MCU_UP_Standard/config.bog (2092ms)
+niagara>INFO [14:17:11 06-Feb-18 EST][sys] Saving station...
+INFO [14:17:12 06-Feb-18 EST][history.db] Saved history archive (71ms)
+INFO [14:17:15 06-Feb-18 EST][sys] Saved /home/niagara/stations/MTI_MCU_UP_Standard/config.bog (4173ms)
+INFO [14:24:49 06-Feb-18 EST][sys] Saving station...
+INFO [14:24:50 06-Feb-18 EST][history.db] Saved history archive (92ms)
+INFO [14:24:52 06-Feb-18 EST][sys] Saved /home/niagara/stations/MTI_MCU_UP_Standard/config.bog (2724ms)
+niagara>INFO [14:25:11 06-Feb-18 EST][sys] Saving station...
+INFO [14:25:11 06-Feb-18 EST][history.db] Saved history archive (69ms)
+INFO [14:25:15 06-Feb-18 EST][sys] Saved /home/niagara/stations/MTI_MCU_UP_Standard/config.bog (4101ms)
+niagara>INFO [14:25:34 06-Feb-18 EST][sys] Saving station...
+INFO [14:25:34 06-Feb-18 EST][history.db] Saved history archive (68ms)
+INFO [14:25:37 06-Feb-18 EST][sys] Saved /home/niagara/stations/MTI_MCU_UP_Standard/config.bog (3051ms)
+INFO [14:28:09 06-Feb-18 EST][fox] Opened: d005f025279eb5e4647c59551edbaec019dfa5d701538238ee <- d1a0053e19c294d35f5271a093dd9f5c9880b36ce2c5f3bd3c :: Workbench @ MAXI-PC-01
+devctl rx frame failed: No error
+INFO [14:28:36 06-Feb-18 EST][fox] Closed: 3bb9c0b98415aea2247921e4d60fe0079c18c41032ff593547 <- 92c75d408ed112263d573089733bd162293436caaa920c7e28 :: Workbench @ MAXI-PC-01
+INFO [14:29:06 06-Feb-18 EST][sys] Saving station...
+INFO [14:29:07 06-Feb-18 EST][history.db] Saved history archive (64ms)
+INFO [14:29:08 06-Feb-18 EST][sys] Saved /home/niagara/stations/MTI_MCU_UP_Standard/config.bog (2101ms)
+INFO [14:29:42 06-Feb-18 EST][console] Quit
+INFO [14:29:42 06-Feb-18 EST][sys] Saving station...
+INFO [14:29:43 06-Feb-18 EST][history.db] Saved history archive (65ms)
+INFO [14:29:45 06-Feb-18 EST][sys] Saved /home/niagara/stations/MTI_MCU_UP_Standard/config.bog (2093ms)
+INFO [14:29:45 06-Feb-18 EST][fox] Closed: d005f025279eb5e4647c59551edbaec019dfa5d701538238ee <- d1a0053e19c294d35f5271a093dd9f5c9880b36ce2c5f3bd3c :: Workbench @ MAXI-PC-01
+devctl DCMD_ACTRL_IO_STATUS_CHANGE failed: No error
+INFO [14:29:45 06-Feb-18 EST][NrioNetwork.unsolicited] NrioUnsolicetedReceive thread stopped.
+INFO [14:29:45 06-Feb-18 EST][sys] Station stopped
+INFO [14:29:47 06-Feb-18 EST][fox] Service stopped
+INFO [14:29:47 06-Feb-18 EST][fox] FOX server stopped on port [1911]
+INFO [14:29:48 06-Feb-18 EST][web] Jetty stopped.
+INFO [14:29:48 06-Feb-18 EST][sys] Services stopped
+INFO [14:29:48 06-Feb-18 EST][sys] *** Station shutdown ***
+
+

@@ -1,0 +1,183 @@
+INFO [nre] Launching Niagara Runtime Environment
+INFO [11:23:07 10-Jul-17 EDT][nre] Booting
+INFO [11:23:08 10-Jul-17 EDT][sys] Logging initialized
+INFO [11:23:11 10-Jul-17 EDT][sys.registry] Up-to-date [132ms]
+INFO [11:23:11 10-Jul-17 EDT][sys.registry] Loaded [82ms]
+INFO [11:23:12 10-Jul-17 EDT][sys] Niagara runtime booted ("C:\Honeywell\WEBStation-N4-4.2.36.38") on Win-86CC-EB91-535B-2CA7 (4703ms)
+INFO [11:23:12 10-Jul-17 EDT][sys] Loading "C:\ProgramData\Niagara4.2\Webs\stations\MSU_Mallory_Hall_20170710\config.bog"...
+INFO [11:23:14 10-Jul-17 EDT][sys] Loaded (2172ms)
+INFO [11:23:15 10-Jul-17 EDT][alarm.database] Loading...
+INFO [11:23:15 10-Jul-17 EDT][alarm.database] Loaded [0ms, 0 alarms, 0 pages]
+INFO [11:23:15 10-Jul-17 EDT][sys] Services Initialized (453ms)
+INFO [11:23:15 10-Jul-17 EDT][sys.mixin] Updated [0ms]
+INFO [11:23:15 10-Jul-17 EDT][sys.mixin] Updated [0ms]
+INFO [11:23:16 10-Jul-17 EDT][web] Jetty web server started on HTTP port 80
+INFO [11:23:16 10-Jul-17 EDT][tagdictionary] Niagara tagdictionary is out of date or has been modified.
+INFO [11:23:16 10-Jul-17 EDT][tagdictionary] Niagara tagdictionary has been reloaded.
+SEVERE [11:23:16 10-Jul-17 EDT][ndio] NdioPlatformService not found!
+javax.baja.sys.ServiceNotFoundException: platMstp:BacnetMstpPlatformService
+	at com.tridium.sys.service.ServiceManager.getService(ServiceManager.java:61)
+	at javax.baja.sys.Sys.getService(Sys.java:321)
+	at com.tridium.bacnet.stack.link.mstp.BBacnetMstpLinkLayer.getPlatformService(BBacnetMstpLinkLayer.java:495)
+	at com.tridium.bacnet.stack.link.mstp.BBacnetMstpLinkLayer.linkCommStart(BBacnetMstpLinkLayer.java:516)
+	at com.tridium.bacnet.stack.link.BBacnetLinkLayer.linkStart(BBacnetLinkLayer.java:92)
+	at com.tridium.bacnet.stack.network.BNetworkPort.networkReady(BNetworkPort.java:754)
+	at com.tridium.bacnet.stack.network.BBacnetNetworkLayer.networkReady(BBacnetNetworkLayer.java:536)
+	at javax.baja.bacnet.BBacnetNetwork.descendantsStarted(BBacnetNetwork.java:549)
+	at com.tridium.sys.engine.EngineUtil.descendantsStarted(EngineUtil.java:202)
+	at com.tridium.sys.engine.EngineManager.start(EngineManager.java:79)
+	at com.tridium.sys.schema.ComponentSlotMap.start(ComponentSlotMap.java:1981)
+	at javax.baja.sys.BComponent.start(BComponent.java:289)
+	at com.tridium.sys.engine.EngineManager.start(EngineManager.java:75)
+	at com.tridium.sys.schema.ComponentSlotMap.start(ComponentSlotMap.java:1981)
+	at javax.baja.sys.BComponent.start(BComponent.java:289)
+	at com.tridium.sys.engine.EngineManager.start(EngineManager.java:75)
+	at com.tridium.sys.schema.ComponentSlotMap.start(ComponentSlotMap.java:1981)
+	at javax.baja.sys.BComponent.start(BComponent.java:289)
+	at com.tridium.sys.station.Station.startStation(Station.java:328)
+	at com.tridium.sys.station.Station.bootStation(Station.java:99)
+	at com.tridium.sys.station.Station.main(Station.java:1116)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.tridium.sys.Nre.runClass(Nre.java:314)
+	at com.tridium.sys.Nre.main(Nre.java:214)
+	at com.tridium.sys.Nre.bootstrap(Nre.java:141)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.tridium.nre.bootstrap.Bootstrap.Main(Bootstrap.java:55)
+WARNING [11:23:16 10-Jul-17 EDT][sys.program] Program not signed. The ability to run unsigned programs will be removed in a future release.
+INFO [11:23:17 10-Jul-17 EDT][history.db] Starting async warmup of history config index...
+INFO [11:23:17 10-Jul-17 EDT][history.db] Async history config index warmup completed in 46 ms.
+INFO [11:23:17 10-Jul-17 EDT][fox] FOX server started on port [1911]
+INFO [11:23:17 10-Jul-17 EDT][sys] Niagara Runtime Environment: 4.2.36.38
+INFO [11:23:17 10-Jul-17 EDT][sys] *** Station Started (2422ms) [10178ms total] ***
+niagara>INFO [11:24:52 10-Jul-17 EDT][fox] Opened: 74c3392d646caa51d8ad7237c98f515502df7693882a498e9f <- 766fe0a8193126ad8b589a3bcd02a81341f41ce9974d9e658c :: Workbench @ MAXI-PC-01.local
+SEVERE [11:26:49 10-Jul-17 EDT][NrioNetwork] Check for duplicate or invalid Port Name
+javax.baja.sys.ServiceNotFoundException: serial:ISerialService
+	at com.tridium.sys.service.ServiceManager.getService(ServiceManager.java:61)
+	at javax.baja.sys.Sys.getService(Sys.java:321)
+	at com.tridium.nrio.comm.NrioComm.started(NrioComm.java:69)
+	at com.tridium.basicdriver.comm.Comm.start(Comm.java:205)
+	at com.tridium.basicdriver.BBasicNetwork.startComm(BBasicNetwork.java:363)
+	at com.tridium.nrio.BNrioNetwork.startComm(BNrioNetwork.java:733)
+	at com.tridium.basicdriver.BBasicNetwork.started(BBasicNetwork.java:393)
+	at com.tridium.nrio.BNrioNetwork.started(BNrioNetwork.java:656)
+	at com.tridium.sys.engine.EngineUtil.started(EngineUtil.java:170)
+	at com.tridium.sys.engine.EngineManager.start(EngineManager.java:68)
+	at com.tridium.sys.schema.ComponentSlotMap.start(ComponentSlotMap.java:1981)
+	at javax.baja.sys.BComponent.start(BComponent.java:289)
+	at javax.baja.sync.SyncBuffer.checkAutoStart(SyncBuffer.java:313)
+	at javax.baja.sync.SyncBuffer.commit(SyncBuffer.java:247)
+	at com.tridium.fox.sys.broker.BBrokerChannel.syncToMaster(BBrokerChannel.java:2269)
+	at com.tridium.fox.sys.broker.BBrokerChannel.circuitOpened(BBrokerChannel.java:268)
+	at com.tridium.fox.sys.BFoxConnection.circuitOpened(BFoxConnection.java:464)
+	at com.tridium.fox.session.SessionCircuits$ServiceThread.run(SessionCircuits.java:316)
+	at java.lang.Thread.run(Thread.java:745)
+
+SEVERE [11:26:49 10-Jul-17 EDT][NrioNetwork] Check for duplicate or invalid Port Name
+javax.baja.sys.ServiceNotFoundException: serial:ISerialService
+	at com.tridium.sys.service.ServiceManager.getService(ServiceManager.java:61)
+	at javax.baja.sys.Sys.getService(Sys.java:321)
+	at com.tridium.nrio.comm.NrioComm.started(NrioComm.java:69)
+	at com.tridium.basicdriver.comm.Comm.start(Comm.java:205)
+	at com.tridium.basicdriver.BBasicNetwork.startComm(BBasicNetwork.java:363)
+	at com.tridium.nrio.BNrioNetwork.startComm(BNrioNetwork.java:733)
+	at com.tridium.basicdriver.BBasicNetwork.changed(BBasicNetwork.java:458)
+	at com.tridium.nrio.BNrioNetwork.changed(BNrioNetwork.java:514)
+	at com.tridium.sys.schema.ComponentSlotMap.fireComponentEvent(ComponentSlotMap.java:1100)
+	at com.tridium.sys.schema.ComponentSlotMap.modified(ComponentSlotMap.java:960)
+	at com.tridium.sys.schema.ComplexSlotMap.set(ComplexSlotMap.java:1083)
+	at com.tridium.sys.schema.ComplexSlotMap.set(ComplexSlotMap.java:879)
+	at javax.baja.sys.BComplex.set(BComplex.java:829)
+	at javax.baja.driver.BDeviceNetwork.setStatus(BDeviceNetwork.java:142)
+	at javax.baja.driver.BDeviceNetwork.updateStatus(BDeviceNetwork.java:471)
+	at javax.baja.driver.BDeviceNetwork.configFail(BDeviceNetwork.java:537)
+	at com.tridium.nrio.BNrioNetwork.startComm(BNrioNetwork.java:746)
+	at com.tridium.basicdriver.BBasicNetwork.started(BBasicNetwork.java:393)
+	at com.tridium.nrio.BNrioNetwork.started(BNrioNetwork.java:656)
+	at com.tridium.sys.engine.EngineUtil.started(EngineUtil.java:170)
+	at com.tridium.sys.engine.EngineManager.start(EngineManager.java:68)
+	at com.tridium.sys.schema.ComponentSlotMap.start(ComponentSlotMap.java:1981)
+	at javax.baja.sys.BComponent.start(BComponent.java:289)
+	at javax.baja.sync.SyncBuffer.checkAutoStart(SyncBuffer.java:313)
+	at javax.baja.sync.SyncBuffer.commit(SyncBuffer.java:247)
+	at com.tridium.fox.sys.broker.BBrokerChannel.syncToMaster(BBrokerChannel.java:2269)
+	at com.tridium.fox.sys.broker.BBrokerChannel.circuitOpened(BBrokerChannel.java:268)
+	at com.tridium.fox.sys.BFoxConnection.circuitOpened(BFoxConnection.java:464)
+	at com.tridium.fox.session.SessionCircuits$ServiceThread.run(SessionCircuits.java:316)
+	at java.lang.Thread.run(Thread.java:745)
+
+SEVERE [11:26:49 10-Jul-17 EDT][NrioNetwork] BBasicNetwork caught exception in changed(): 
+javax.baja.sys.ServiceNotFoundException: serial:ISerialService
+	at com.tridium.sys.service.ServiceManager.getService(ServiceManager.java:61)
+	at javax.baja.sys.Sys.getService(Sys.java:321)
+	at com.tridium.nrio.comm.NrioComm.started(NrioComm.java:69)
+	at com.tridium.basicdriver.comm.Comm.start(Comm.java:205)
+	at com.tridium.basicdriver.BBasicNetwork.startComm(BBasicNetwork.java:363)
+	at com.tridium.nrio.BNrioNetwork.startComm(BNrioNetwork.java:733)
+	at com.tridium.basicdriver.BBasicNetwork.changed(BBasicNetwork.java:458)
+	at com.tridium.nrio.BNrioNetwork.changed(BNrioNetwork.java:514)
+	at com.tridium.sys.schema.ComponentSlotMap.fireComponentEvent(ComponentSlotMap.java:1100)
+	at com.tridium.sys.schema.ComponentSlotMap.modified(ComponentSlotMap.java:960)
+	at com.tridium.sys.schema.ComplexSlotMap.set(ComplexSlotMap.java:1083)
+	at com.tridium.sys.schema.ComplexSlotMap.set(ComplexSlotMap.java:879)
+	at javax.baja.sys.BComplex.set(BComplex.java:829)
+	at javax.baja.driver.BDeviceNetwork.setStatus(BDeviceNetwork.java:142)
+	at javax.baja.driver.BDeviceNetwork.updateStatus(BDeviceNetwork.java:471)
+	at javax.baja.driver.BDeviceNetwork.configFail(BDeviceNetwork.java:537)
+	at com.tridium.nrio.BNrioNetwork.startComm(BNrioNetwork.java:746)
+	at com.tridium.basicdriver.BBasicNetwork.started(BBasicNetwork.java:393)
+	at com.tridium.nrio.BNrioNetwork.started(BNrioNetwork.java:656)
+	at com.tridium.sys.engine.EngineUtil.started(EngineUtil.java:170)
+	at com.tridium.sys.engine.EngineManager.start(EngineManager.java:68)
+	at com.tridium.sys.schema.ComponentSlotMap.start(ComponentSlotMap.java:1981)
+	at javax.baja.sys.BComponent.start(BComponent.java:289)
+	at javax.baja.sync.SyncBuffer.checkAutoStart(SyncBuffer.java:313)
+	at javax.baja.sync.SyncBuffer.commit(SyncBuffer.java:247)
+	at com.tridium.fox.sys.broker.BBrokerChannel.syncToMaster(BBrokerChannel.java:2269)
+	at com.tridium.fox.sys.broker.BBrokerChannel.circuitOpened(BBrokerChannel.java:268)
+	at com.tridium.fox.sys.BFoxConnection.circuitOpened(BFoxConnection.java:464)
+	at com.tridium.fox.session.SessionCircuits$ServiceThread.run(SessionCircuits.java:316)
+	at java.lang.Thread.run(Thread.java:745)
+
+SEVERE [11:26:49 10-Jul-17 EDT][NrioNetwork] Could not start communication handler
+javax.baja.sys.ServiceNotFoundException: serial:ISerialService
+	at com.tridium.sys.service.ServiceManager.getService(ServiceManager.java:61)
+	at javax.baja.sys.Sys.getService(Sys.java:321)
+	at com.tridium.nrio.comm.NrioComm.started(NrioComm.java:69)
+	at com.tridium.basicdriver.comm.Comm.start(Comm.java:205)
+	at com.tridium.basicdriver.BBasicNetwork.startComm(BBasicNetwork.java:363)
+	at com.tridium.nrio.BNrioNetwork.startComm(BNrioNetwork.java:733)
+	at com.tridium.basicdriver.BBasicNetwork.started(BBasicNetwork.java:393)
+	at com.tridium.nrio.BNrioNetwork.started(BNrioNetwork.java:656)
+	at com.tridium.sys.engine.EngineUtil.started(EngineUtil.java:170)
+	at com.tridium.sys.engine.EngineManager.start(EngineManager.java:68)
+	at com.tridium.sys.schema.ComponentSlotMap.start(ComponentSlotMap.java:1981)
+	at javax.baja.sys.BComponent.start(BComponent.java:289)
+	at javax.baja.sync.SyncBuffer.checkAutoStart(SyncBuffer.java:313)
+	at javax.baja.sync.SyncBuffer.commit(SyncBuffer.java:247)
+	at com.tridium.fox.sys.broker.BBrokerChannel.syncToMaster(BBrokerChannel.java:2269)
+	at com.tridium.fox.sys.broker.BBrokerChannel.circuitOpened(BBrokerChannel.java:268)
+	at com.tridium.fox.sys.BFoxConnection.circuitOpened(BFoxConnection.java:464)
+	at com.tridium.fox.session.SessionCircuits$ServiceThread.run(SessionCircuits.java:316)
+	at java.lang.Thread.run(Thread.java:745)
+
+INFO [11:30:23 10-Jul-17 EDT][sys] Saving station...
+INFO [11:30:24 10-Jul-17 EDT][sys] Saved C:\ProgramData\Niagara4.2\Webs\stations\MSU_Mallory_Hall_20170710\config.bog (594ms)
+INFO [11:30:42 10-Jul-17 EDT][console] Quit
+INFO [11:30:42 10-Jul-17 EDT][sys] Saving station...
+INFO [11:30:42 10-Jul-17 EDT][sys] Saved C:\ProgramData\Niagara4.2\Webs\stations\MSU_Mallory_Hall_20170710\config.bog (297ms)
+INFO [11:30:42 10-Jul-17 EDT][fox] Closed: 74c3392d646caa51d8ad7237c98f515502df7693882a498e9f <- 766fe0a8193126ad8b589a3bcd02a81341f41ce9974d9e658c :: Workbench @ MAXI-PC-01.local
+INFO [11:30:42 10-Jul-17 EDT][NrioNetwork] cannot disable polling on address 0 !!!
+INFO [11:30:42 10-Jul-17 EDT][sys] Station stopped
+INFO [11:30:42 10-Jul-17 EDT][fox] Service stopped
+INFO [11:30:42 10-Jul-17 EDT][fox] FOX server stopped on port [1911]
+INFO [11:30:42 10-Jul-17 EDT][web] Jetty stopped.
+INFO [11:30:44 10-Jul-17 EDT][sys] Services stopped
+INFO [11:30:44 10-Jul-17 EDT][sys] *** Station shutdown ***
+
+

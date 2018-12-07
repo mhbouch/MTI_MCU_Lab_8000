@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Niagara Presentation XML -->
+<px version="1.0" media="workbench:WbPxMedia">
+<import>
+  <module name="baja"/>
+  <module name="bajaui"/>
+  <module name="converters"/>
+  <module name="gx"/>
+  <module name="kitPx"/>
+</import>
+<content>
+<CanvasPane viewSize="600.0,400.0" background="linearGradient( angle(-45.0) stop(0.35% #088cf5) stop(50.0% #71b4e9) stop(100.0% #088cf5) )">
+
+  <Rect fill="#606060" stroke="black" geom="340.0,10.0,89.99999999999989,380.0"/>
+
+  <Rect fill="#e0e0e0" stroke="black" geom="350.0,20.0,69.99999999999989,360.0"/>
+
+  <Label layout="350.0,150.0,70.0,45.0" text="Steam  Setpoint" font="14.0pt Tahoma" wordWrapEnabled="true"/>
+
+  <ImageButton layout="360.0,30.0,50.0,50.0" text="+1.0" font="bold 16.0pt Tahoma" background="#ff8000" wordWrapEnabled="true">
+    <IncrementSetPointBinding ord="station:|slot:/Programme/PT_SP1" widgetEvent="actionPerformed" increment="1.0"/>
+    <WsAnnotation name="wsAnnotation" value="66,66,8"/>
+  </ImageButton>
+
+  <ImageButton layout="360.0000000000001,255.0,50.0,50.0" text="-0.1" font="bold 16.0pt Tahoma" background="#8080ff" wordWrapEnabled="true">
+    <IncrementSetPointBinding ord="station:|slot:/Programme/PT_SP1" widgetEvent="actionPerformed" increment="-0.1"/>
+    <WsAnnotation name="wsAnnotation" value="70,70,8"/>
+  </ImageButton>
+
+  <ImageButton layout="360.0000000000001,320.0,50.0,50.0" text="-1.0" font="bold 16.0pt Tahoma" background="#8080ff" wordWrapEnabled="true">
+    <IncrementSetPointBinding ord="station:|slot:/Programme/PT_SP1" widgetEvent="actionPerformed" increment="-1.0"/>
+    <WsAnnotation name="wsAnnotation" value="70,70,8"/>
+  </ImageButton>
+
+  <ImageButton layout="360.0,90.0,50.0,50.0" text="+0.1" font="bold 16.0pt Tahoma" background="#ff8000" wordWrapEnabled="true">
+    <IncrementSetPointBinding ord="station:|slot:/Programme/PT_SP1" widgetEvent="actionPerformed" increment="0.1"/>
+    <WsAnnotation name="wsAnnotation" value="66,66,8"/>
+  </ImageButton>
+
+  <BoundLabel layout="350.0,225.0,70.00000000000011,20.0" font="bold 14.0pt Tahoma">
+    <BoundLabelBinding ord="station:|slot:/Programme/PT_SP_Calc" statusEffect="none">
+      <ObjectToString name="text" format="%out.value%"/>
+    </BoundLabelBinding>
+  </BoundLabel>
+
+  <Label layout="350.0,200.0,70.0,25.0" text="Value" font="bold 14.0pt Tahoma"/>
+
+  <Rect fill="#606060" stroke="black" geom="460.0,10.0,89.99999999999989,380.0"/>
+
+  <Rect fill="#e0e0e0" stroke="black" geom="470.0,20.0,69.99999999999989,360.0"/>
+
+  <ImageButton layout="480.0,30.0,50.0,50.0" text="+1.0" font="bold 16.0pt Tahoma" background="#ff8000" wordWrapEnabled="true">
+    <IncrementSetPointBinding ord="station:|slot:/Programme/PT_SP_Diff1" widgetEvent="actionPerformed" increment="1.0"/>
+    <WsAnnotation name="wsAnnotation" value="66,66,8"/>
+  </ImageButton>
+
+  <ImageButton layout="480.0000000000001,255.0,50.0,50.0" text="-0.1" font="bold 16.0pt Tahoma" background="#8080ff" wordWrapEnabled="true">
+    <IncrementSetPointBinding ord="station:|slot:/Programme/PT_SP_Diff1" widgetEvent="actionPerformed" increment="-0.1"/>
+    <WsAnnotation name="wsAnnotation" value="70,70,8"/>
+  </ImageButton>
+
+  <ImageButton layout="480.0000000000001,320.0,50.0,50.0" text="-1.0" font="bold 16.0pt Tahoma" background="#8080ff" wordWrapEnabled="true">
+    <IncrementSetPointBinding ord="station:|slot:/Programme/PT_SP_Diff1" widgetEvent="actionPerformed" increment="-1.0"/>
+    <WsAnnotation name="wsAnnotation" value="70,70,8"/>
+  </ImageButton>
+
+  <ImageButton layout="480.0,90.0,50.0,50.0" text="+0.1" font="bold 16.0pt Tahoma" background="#ff8000" wordWrapEnabled="true">
+    <IncrementSetPointBinding ord="station:|slot:/Programme/PT_SP_Diff1" widgetEvent="actionPerformed" increment="0.1"/>
+    <WsAnnotation name="wsAnnotation" value="66,66,8"/>
+  </ImageButton>
+
+  <BoundLabel layout="470.0,225.0,70.00000000000011,20.0" font="bold 14.0pt Tahoma">
+    <BoundLabelBinding ord="station:|slot:/Programme/PT_SP_Diff_Calc" statusEffect="none">
+      <ObjectToString name="text" format="%out.value%"/>
+    </BoundLabelBinding>
+  </BoundLabel>
+
+  <Label layout="470.0,200.0,70.0,25.0" text="Value" font="bold 14.0pt Tahoma"/>
+
+  <ImageButton layout="65.0,240.0,100.0,135.0" text="Fine   Tuning" font="bold 16.0pt Tahoma" wordWrapEnabled="true">
+    <ValueBinding hyperlink="station:|slot:/FineTuning"/>
+    <WsAnnotation name="wsAnnotation" value="10,10,8"/>
+  </ImageButton>
+
+  <Label layout="0.0,0.0,210.0,30.0" text="Flow and Steam Adjust" font="20.0pt Tahoma" foreground="white" background="blue"/>
+
+  <Label layout="470.0,150.0,70.0,45.0" text="Steam Pressure Diff" font="14.0pt Tahoma" wordWrapEnabled="true"/>
+
+  <ImageButton layout="65.0,50.0,100.0,135.0" text="MAIN" font="bold 16.0pt Tahoma">
+    <ValueBinding hyperlink="station:|slot:/"/>
+    <WsAnnotation name="wsAnnotation" value="10,10,8"/>
+  </ImageButton>
+
+  <Label layout="10.0,375.0,30.0,20.0" text="AD"/>
+
+  <Rect fill="#606060" stroke="black" geom="220.0,10.0,89.99999999999989,380.0"/>
+
+  <Rect fill="#e0e0e0" stroke="black" geom="230.0,20.0,69.99999999999989,360.0"/>
+
+  <Label layout="230.0,150.0,70.0,45.0" text="Minimum Startup Flow" font="14.0pt Tahoma" wordWrapEnabled="true"/>
+
+  <ImageButton layout="240.0,30.0,50.0,50.0" text="+1.0" font="bold 16.0pt Tahoma" background="#ff8000" wordWrapEnabled="true">
+    <IncrementSetPointBinding ord="station:|slot:/Programme/NoFlowAlarm_3/MinimumFlow" widgetEvent="actionPerformed" increment="1.0"/>
+    <WsAnnotation name="wsAnnotation" value="66,66,8"/>
+  </ImageButton>
+
+  <ImageButton layout="240.0000000000001,255.0,50.0,50.0" text="-0.1" font="bold 16.0pt Tahoma" background="#8080ff" wordWrapEnabled="true">
+    <IncrementSetPointBinding ord="station:|slot:/Programme/NoFlowAlarm_3/MinimumFlow" widgetEvent="actionPerformed" increment="-0.1"/>
+    <WsAnnotation name="wsAnnotation" value="70,70,8"/>
+  </ImageButton>
+
+  <ImageButton layout="240.0000000000001,320.0,50.0,50.0" text="-1.0" font="bold 16.0pt Tahoma" background="#8080ff" wordWrapEnabled="true">
+    <IncrementSetPointBinding ord="station:|slot:/Programme/NoFlowAlarm_3/MinimumFlow" widgetEvent="actionPerformed" increment="-1.0"/>
+    <WsAnnotation name="wsAnnotation" value="70,70,8"/>
+  </ImageButton>
+
+  <ImageButton layout="240.0,90.0,50.0,50.0" text="+0.1" font="bold 16.0pt Tahoma" background="#ff8000" wordWrapEnabled="true">
+    <IncrementSetPointBinding ord="station:|slot:/Programme/NoFlowAlarm_3/MinimumFlow" widgetEvent="actionPerformed" increment="0.1"/>
+    <WsAnnotation name="wsAnnotation" value="66,66,8"/>
+  </ImageButton>
+
+  <BoundLabel layout="230.0,225.0,70.00000000000011,20.0" font="bold 14.0pt Tahoma">
+    <BoundLabelBinding ord="station:|slot:/Programme/NoFlowAlarm_3/MinimumFlow" statusEffect="none">
+      <ObjectToString name="text" format="%out.value%"/>
+    </BoundLabelBinding>
+  </BoundLabel>
+
+  <Label layout="230.0,200.0,70.0,25.0" text="Value" font="bold 14.0pt Tahoma"/>
+
+</CanvasPane>
+</content>
+</px>

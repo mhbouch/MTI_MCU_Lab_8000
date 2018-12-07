@@ -1,0 +1,69 @@
+INFO [nre] Launching Niagara Runtime Environment
+INFO [09:24:29 06-Jun-18 EDT][nre] Booting
+INFO [09:24:41 06-Jun-18 EDT][sys] Logging initialized
+INFO [09:24:56 06-Jun-18 EDT][sys.registry] Up-to-date [275ms]
+INFO [09:24:57 06-Jun-18 EDT][sys.registry] Loaded [474ms]
+INFO [09:25:02 06-Jun-18 EDT][sys] Niagara runtime booted ("/opt/niagara") on Qnx-TITAN-3A4B-8868-D053-10B4 (35125ms)
+INFO [09:25:02 06-Jun-18 EDT][sys] Loading "/home/niagara/stations/MTI_MCU_Lab_8000/config.bog"...
+INFO [09:25:32 06-Jun-18 EDT][sys] Loaded (29613ms)
+INFO [09:25:36 06-Jun-18 EDT][alarm.database] Loading...
+INFO [09:25:37 06-Jun-18 EDT][alarm.database] Loaded [246ms, 43 alarms, 88 pages]
+WARNING [09:25:37 06-Jun-18 EDT][platDataRecovery.service] Recovery data detected, replaying...
+INFO [09:25:46 06-Jun-18 EDT][sys] DataRecoveryService restoration check complete (10381ms)
+INFO [09:25:59 06-Jun-18 EDT][sys] Services Initialized (12899ms)
+INFO [09:25:59 06-Jun-18 EDT][sys.mixin] Updated [50ms]
+INFO [09:26:01 06-Jun-18 EDT][sys.mixin] Updated [24ms]
+INFO [09:26:01 06-Jun-18 EDT][history.db] Starting async warmup of history config index...
+INFO [09:26:01 06-Jun-18 EDT][history.db] Async history config index warmup completed in 49 ms.
+INFO [09:26:07 06-Jun-18 EDT][web] Jetty web server started on HTTP port 80
+INFO [09:26:07 06-Jun-18 EDT][tagdictionary] Niagara tagdictionary is out of date or has been modified.
+INFO [09:26:08 06-Jun-18 EDT][tagdictionary] Niagara tagdictionary has been reloaded.
+WARNING [09:26:08 06-Jun-18 EDT][bacnet.server] Unable to resolve point ord for Drivers.NdioNetwork.NrioBoard.points.FS [binaryValue:17]: h:d40
+WARNING [09:26:08 06-Jun-18 EDT][bacnet.server] Unable to resolve point ord for Drivers.NdioNetwork.NdioBoard.points.CV2_Analog [analogValue:4]: h:9d4
+INFO [09:26:09 06-Jun-18 EDT][NrioNetwork] Opened COM1
+INFO [09:26:09 06-Jun-18 EDT][NrioNetwork.unsolicited] NrioUnsolicetedReceive thread started.
+WARNING [09:26:10 06-Jun-18 EDT][sys.program] Program not signed. The ability to run unsigned programs will be removed in a future release.
+INFO [09:26:15 06-Jun-18 EDT][fox] FOX server started on port [1911]
+INFO [09:26:15 06-Jun-18 EDT][sys] Niagara Runtime Environment: 4.3.58.18.1
+INFO [09:26:15 06-Jun-18 EDT][sys] *** Station Started (15992ms) [107919ms total] ***
+niagara>INFO [09:26:15 06-Jun-18 EDT][sys] Saving station...
+INFO [09:26:18 06-Jun-18 EDT][history.db] Saved history archive (189ms)
+INFO [09:26:21 06-Jun-18 EDT][sys] Saved /home/niagara/stations/MTI_MCU_Lab_8000/config.bog (4540ms)
+INFO [09:26:35 06-Jun-18 EDT][NrioNetwork.wrIo] wrThread running
+WARNING [09:27:27 06-Jun-18 EDT][hx.px.cache] unresolved: station:|slot:/Programme/FS
+WARNING [09:27:27 06-Jun-18 EDT][hx.px.cache] unresolved: station:|slot:/Drivers/NrioNetwork/NrioBoard/points/RTD2
+WARNING [09:27:27 06-Jun-18 EDT][hx.px.cache] unresolved: station:|slot:/Drivers/NdioNetwork/NdioBoard/points/E_Stop
+WARNING [09:30:38 06-Jun-18 EDT][hx.px.cache] unresolved: station:|slot:/Programme/FS
+WARNING [09:30:38 06-Jun-18 EDT][hx.px.cache] unresolved: station:|slot:/Drivers/NrioNetwork/NrioBoard/points/RTD2
+WARNING [09:30:38 06-Jun-18 EDT][hx.px.cache] unresolved: station:|slot:/Drivers/NdioNetwork/NdioBoard/points/E_Stop
+WARNING [09:30:57 06-Jun-18 EDT][hx.px.cache] unresolved: station:|slot:/Programme/FS
+WARNING [09:30:57 06-Jun-18 EDT][hx.px.cache] unresolved: station:|slot:/Drivers/NdioNetwork/NdioBoard/points/E_Stop
+WARNING [09:30:57 06-Jun-18 EDT][hx.px] Station Theme differs from Selected Hx Theme for oper: Zebra != Lucid
+WARNING [09:31:16 06-Jun-18 EDT][hx.px.cache] unresolved: station:|slot:/Programme/FS
+WARNING [09:31:16 06-Jun-18 EDT][hx.px.cache] unresolved: station:|slot:/Drivers/NrioNetwork/NrioBoard/points/RTD2
+WARNING [09:31:16 06-Jun-18 EDT][hx.px.cache] unresolved: station:|slot:/Drivers/NdioNetwork/NdioBoard/points/E_Stop
+WARNING [09:50:43 06-Jun-18 EDT][hx.px.cache] unresolved: station:|slot:/Programme/FS
+WARNING [09:50:43 06-Jun-18 EDT][hx.px.cache] unresolved: station:|slot:/Drivers/NrioNetwork/NrioBoard/points/RTD2
+WARNING [09:50:43 06-Jun-18 EDT][hx.px.cache] unresolved: station:|slot:/Drivers/NdioNetwork/NdioBoard/points/E_Stop
+WARNING [09:54:56 06-Jun-18 EDT][hx.px.cache] unresolved: station:|slot:/Programme/FS
+WARNING [09:54:56 06-Jun-18 EDT][hx.px.cache] unresolved: station:|slot:/Drivers/NrioNetwork/NrioBoard/points/RTD2
+WARNING [09:54:56 06-Jun-18 EDT][hx.px.cache] unresolved: station:|slot:/Drivers/NdioNetwork/NdioBoard/points/E_Stop
+INFO [11:59:55 06-Jun-18 EDT][sys.net] Network interface event encountered, refreshing local network interfaces...
+INFO [11:59:55 06-Jun-18 EDT][sys.net] Network interface refresh complete
+INFO [12:00:05 06-Jun-18 EDT][sys.net] Network interface event encountered, refreshing local network interfaces...
+INFO [12:00:05 06-Jun-18 EDT][sys.net] Network interface refresh complete
+INFO [12:05:14 06-Jun-18 EDT][console] Quit
+INFO [12:05:14 06-Jun-18 EDT][sys] Saving station...
+INFO [12:05:15 06-Jun-18 EDT][history.db] Saved history archive (98ms)
+INFO [12:05:17 06-Jun-18 EDT][sys] Saved /home/niagara/stations/MTI_MCU_Lab_8000/config.bog (3132ms)
+devctl rx frame failed: No error
+devctl DCMD_ACTRL_IO_STATUS_CHANGE failed: No error
+INFO [12:05:17 06-Jun-18 EDT][NrioNetwork.unsolicited] NrioUnsolicetedReceive thread stopped.
+INFO [12:05:18 06-Jun-18 EDT][sys] Station stopped
+INFO [12:05:18 06-Jun-18 EDT][fox] Service stopped
+INFO [12:05:18 06-Jun-18 EDT][fox] FOX server stopped on port [1911]
+INFO [12:05:18 06-Jun-18 EDT][web] Jetty stopped.
+INFO [12:05:20 06-Jun-18 EDT][sys] Services stopped
+INFO [12:05:20 06-Jun-18 EDT][sys] *** Station shutdown ***
+
+

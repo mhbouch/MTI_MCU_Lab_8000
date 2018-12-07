@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Niagara Presentation XML -->
+<px version="1.0" media="workbench:WbPxMedia">
+<import>
+  <module name="baja"/>
+  <module name="bajaui"/>
+  <module name="converters"/>
+  <module name="gx"/>
+  <module name="kitPx"/>
+</import>
+<content>
+<ScrollPane>
+
+  <CanvasPane name="content" viewSize="600.0,400.0" background="linearGradient( angle(-45.0) stop(0.35% #088cf5) stop(50.0% #71b4e9) stop(100.0% #088cf5) )">
+
+    <ImageButton layout="65.0,240.0,100.0,135.0" text="Fine   Tuning" font="bold 16.0pt Tahoma" wordWrapEnabled="true">
+      <ValueBinding hyperlink="station:|slot:/OperatorHome/FineTuning"/>
+      <WsAnnotation name="wsAnnotation" value="10,10,8"/>
+    </ImageButton>
+
+    <ImageButton layout="65.0,60.0,100.0,135.0" text="MAIN" font="bold 16.0pt Tahoma">
+      <ValueBinding hyperlink="station:|slot:/OperatorHome"/>
+      <WsAnnotation name="wsAnnotation" value="10,10,8"/>
+    </ImageButton>
+
+    <Label layout="0.0,0.0,210.0,30.0" text="Alarm Display" font="20.0pt Tahoma" foreground="white" background="blue"/>
+
+    <BoundLabel layout="240.0,60.0,310.0,30.0" font="bold 20.0pt Tahoma" border="1.0 solid black">
+      <BoundLabelBinding ord="station:|slot:/Programme/No_Flow_Alarm" statusEffect="none">
+        <ObjectToString name="text" format="Flow Switch : %out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <BoundLabel layout="240.0,100.0,310.0,30.0" font="bold 20.0pt Tahoma" border="1.0 solid black">
+      <BoundLabelBinding ord="station:|slot:/Programme/LT_Alarm" statusEffect="none">
+        <ObjectToString name="text" format="Low Temperature : %out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <BoundLabel layout="240.0,140.0,310.0,30.0" font="bold 20.0pt Tahoma" border="1.0 solid black">
+      <BoundLabelBinding ord="station:|slot:/Programme/HT_Alarm" statusEffect="none">
+        <ObjectToString name="text" format="High Temperature : %out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <BoundLabel layout="240.0,180.0,310.0,30.0" font="bold 20.0pt Tahoma" border="1.0 solid black">
+      <BoundLabelBinding ord="station:|slot:/Programme/T_Sens_Error" statusEffect="none">
+        <ObjectToString name="text" format="Sensor Fault : %out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <BoundLabel layout="550.0,60.0,35.0,30.0" font="bold 20.0pt Tahoma" border="1.0 solid black">
+      <BoundLabelBinding ord="station:|slot:/Programme/No_Flow_Alarm" statusEffect="none">
+        <IStatusToSimple name="background">
+          <Brush name="disabled" value="#40ff40"/>
+          <Brush name="fault" value="#40ff40"/>
+          <Brush name="down" value="#40ff40"/>
+          <Brush name="alarm" value="red"/>
+          <Brush name="stale" value="#40ff40"/>
+          <Brush name="overridden" value="#40ff40"/>
+          <Brush name="nullStatus" value="#40ff40"/>
+          <Brush name="unackedAlarm" value="#40ff40"/>
+        </IStatusToSimple>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <BoundLabel layout="550.0,100.0,35.0,30.0" font="bold 20.0pt Tahoma" border="1.0 solid black">
+      <BoundLabelBinding ord="station:|slot:/Programme/LT_Alarm" statusEffect="none">
+        <IBooleanToSimple name="background">
+          <Brush name="trueValue" value="red"/>
+          <Brush name="falseValue" value="lime"/>
+        </IBooleanToSimple>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <BoundLabel layout="550.0,140.0,35.0,30.0" font="bold 20.0pt Tahoma" border="1.0 solid black">
+      <BoundLabelBinding ord="station:|slot:/Programme/HT_Alarm" statusEffect="none">
+        <IBooleanToSimple name="background">
+          <Brush name="trueValue" value="red"/>
+          <Brush name="falseValue" value="lime"/>
+        </IBooleanToSimple>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <BoundLabel layout="550.0,180.0,35.0,30.0" font="bold 20.0pt Tahoma" border="1.0 solid black">
+      <BoundLabelBinding ord="station:|slot:/Programme/T_Sens_Error" statusEffect="none">
+        <IBooleanToSimple name="background">
+          <Brush name="trueValue" value="red"/>
+          <Brush name="falseValue" value="#40ff40"/>
+        </IBooleanToSimple>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+  </CanvasPane>
+
+</ScrollPane>
+</content>
+</px>

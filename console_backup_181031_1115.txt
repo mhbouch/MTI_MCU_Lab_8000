@@ -1,0 +1,49 @@
+INFO [nre] Launching Niagara Runtime Environment
+INFO [11:09:29 31-Oct-18 EDT][nre] Booting
+INFO [11:09:41 31-Oct-18 EDT][sys] Logging initialized
+INFO [11:09:57 31-Oct-18 EDT][sys.registry] Out-of-date: Module changed "fonts-rt"
+INFO [11:09:57 31-Oct-18 EDT][sys.registry] Rebuilding registry...
+INFO [11:10:23 31-Oct-18 EDT][sys.registry] Loaded [241ms]
+INFO [11:10:23 31-Oct-18 EDT][sys.registry] Rebuilt: 3369 types [25814ms]
+INFO [11:10:26 31-Oct-18 EDT][sys] Registry has changed. Checking modules for additional permissions.
+INFO [11:10:26 31-Oct-18 EDT][sys] No additional permissions found.
+INFO [11:10:29 31-Oct-18 EDT][sys] Niagara runtime booted ("/opt/niagara") on Qnx-TITAN-3A4B-8868-D053-10B4 (61932ms)
+INFO [11:10:29 31-Oct-18 EDT][sys] Loading "/home/niagara/stations/MTI_MCU_Lab_8000/config.bog"...
+INFO [11:10:59 31-Oct-18 EDT][sys] Loaded (29663ms)
+INFO [11:11:03 31-Oct-18 EDT][alarm.database] Loading...
+INFO [11:11:04 31-Oct-18 EDT][alarm.database] Loaded [498ms, 145 alarms, 296 pages]
+INFO [11:11:04 31-Oct-18 EDT][sys] DataRecoveryService restoration check complete (1512ms)
+INFO [11:11:15 31-Oct-18 EDT][platmstp] MSTP daemon already running
+INFO [11:11:15 31-Oct-18 EDT][platNrio] access/nrio daemon already running
+INFO [11:11:16 31-Oct-18 EDT][sys] Services Initialized (11560ms)
+INFO [11:11:16 31-Oct-18 EDT][sys.mixin] Updated [54ms]
+INFO [11:11:18 31-Oct-18 EDT][history.db] Starting async warmup of history config index...
+INFO [11:11:19 31-Oct-18 EDT][history.db] Async history config index warmup completed in 830 ms.
+INFO [11:11:19 31-Oct-18 EDT][sys.mixin] Updated [22ms]
+INFO [11:11:26 31-Oct-18 EDT][web] Jetty web server started on HTTP port 80
+INFO [11:11:26 31-Oct-18 EDT][tagdictionary] Niagara tagdictionary is out of date or has been modified.
+INFO [11:11:26 31-Oct-18 EDT][tagdictionary] Niagara tagdictionary has been reloaded.
+WARNING [11:11:27 31-Oct-18 EDT][bacnet.server] Unable to resolve point ord for Drivers.NdioNetwork.NrioBoard.points.FS [binaryValue:17]: h:d40
+WARNING [11:11:27 31-Oct-18 EDT][bacnet.server] Unable to resolve point ord for Drivers.NdioNetwork.NdioBoard.points.CV2_Analog [analogValue:4]: h:9d4
+INFO [11:11:29 31-Oct-18 EDT][NrioNetwork] Opened COM1
+INFO [11:11:29 31-Oct-18 EDT][NrioNetwork.unsolicited] NrioUnsolicetedReceive thread started.
+WARNING [11:11:31 31-Oct-18 EDT][sys.program] Program not signed. The ability to run unsigned programs will be removed in a future release.
+INFO [11:11:35 31-Oct-18 EDT][fox] FOX server started on port [1911]
+INFO [11:11:35 31-Oct-18 EDT][sys] Niagara Runtime Environment: 4.3.58.18.1
+INFO [11:11:35 31-Oct-18 EDT][sys] *** Station Started (19485ms) [128088ms total] ***
+niagara>INFO [11:11:56 31-Oct-18 EDT][NrioNetwork.wrIo] wrThread running
+INFO [11:15:34 31-Oct-18 EDT][console] Quit
+INFO [11:15:34 31-Oct-18 EDT][sys] Saving station...
+INFO [11:15:36 31-Oct-18 EDT][history.db] Saved history archive (185ms)
+INFO [11:15:38 31-Oct-18 EDT][sys] Saved /home/niagara/stations/MTI_MCU_Lab_8000/config.bog (3777ms)
+devctl rx frame failed: No error
+devctl DCMD_ACTRL_IO_STATUS_CHANGE failed: No error
+INFO [11:15:39 31-Oct-18 EDT][NrioNetwork.unsolicited] NrioUnsolicetedReceive thread stopped.
+INFO [11:15:39 31-Oct-18 EDT][sys] Station stopped
+INFO [11:15:41 31-Oct-18 EDT][fox] Service stopped
+INFO [11:15:41 31-Oct-18 EDT][fox] FOX server stopped on port [1911]
+INFO [11:15:42 31-Oct-18 EDT][web] Jetty stopped.
+INFO [11:15:42 31-Oct-18 EDT][sys] Services stopped
+INFO [11:15:42 31-Oct-18 EDT][sys] *** Station shutdown ***
+
+

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Niagara Presentation XML -->
+<px version="1.0" media="workbench:WbPxMedia">
+<import>
+  <module name="baja"/>
+  <module name="bajaui"/>
+  <module name="converters"/>
+  <module name="gx"/>
+  <module name="kitPx"/>
+</import>
+<content>
+
+
+  <CanvasPane name="content" viewSize="600.0,400.0" background="linearGradient( angle(-45.0) stop(0.35% #088cf5) stop(50.0% #71b4e9) stop(100.0% #088cf5) )">
+
+    <Rect fill="#606060" stroke="black" geom="225.0,10.0,89.99999999999989,380.0"/>
+
+    <Rect fill="#e0e0e0" stroke="black" geom="235.0,20.0,69.99999999999989,360.0"/>
+
+    <Label layout="235.0,140.0,70.0,45.0" text="RTD1 Offset" font="bold 14.0pt Tahoma" wordWrapEnabled="true"/>
+
+    <BoundLabel layout="235.0,180.0,70.00000000000011,20.0" font="bold 14.0pt Tahoma">
+      <BoundLabelBinding ord="station:|slot:/Drivers/NrioNetwork/NrioBoard/points/RTD1_Offset_Calc" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <ImageButton layout="245.0,30.0,50.0,50.0" text="HIGHER +1.0" font="bold 12.0pt Tahoma" background="#ff8000" wordWrapEnabled="true">
+      <IncrementSetPointBinding ord="station:|slot:/Drivers/NrioNetwork/NrioBoard/points/RTD1_Offset_1" widgetEvent="actionPerformed" increment="1.0"/>
+      <WsAnnotation name="wsAnnotation" value="66,66,8"/>
+    </ImageButton>
+
+    <ImageButton layout="245.0000000000001,255.0,50.0,50.0" text="LOWER -0.1" font="bold 12.0pt Tahoma" background="#8080ff" wordWrapEnabled="true">
+      <IncrementSetPointBinding ord="station:|slot:/Drivers/NrioNetwork/NrioBoard/points/RTD1_Offset_1" widgetEvent="actionPerformed" increment="-0.1"/>
+      <WsAnnotation name="wsAnnotation" value="70,70,8"/>
+    </ImageButton>
+
+    <ImageButton layout="245.0000000000001,320.0,50.0,50.0" text="LOWER -1.0" font="bold 12.0pt Tahoma" background="#8080ff" wordWrapEnabled="true">
+      <IncrementSetPointBinding ord="station:|slot:/Drivers/NrioNetwork/NrioBoard/points/RTD1_Offset_1" widgetEvent="actionPerformed" increment="-1.0"/>
+      <WsAnnotation name="wsAnnotation" value="70,70,8"/>
+    </ImageButton>
+
+    <ImageButton layout="245.0,90.0,50.0,50.0" text="HIGHER +0.1" font="bold 12.0pt Tahoma" background="#ff8000" wordWrapEnabled="true">
+      <IncrementSetPointBinding ord="station:|slot:/Drivers/NrioNetwork/NrioBoard/points/RTD1_Offset_1" widgetEvent="actionPerformed" increment="0.1"/>
+      <WsAnnotation name="wsAnnotation" value="66,66,8"/>
+    </ImageButton>
+
+    <BoundLabel layout="235.0,225.0,70.00000000000011,20.0" font="bold 14.0pt Tahoma">
+      <BoundLabelBinding ord="station:|slot:/Drivers/NrioNetwork/NrioBoard/points/RTD1" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="235.0,200.0,70.0,25.0" text="Value" font="bold 14.0pt Tahoma"/>
+
+    <Rect fill="#606060" stroke="black" geom="320.0,10.0,89.99999999999989,380.0"/>
+
+    <Rect fill="#e0e0e0" stroke="black" geom="330.0,20.0,69.99999999999989,360.0"/>
+
+    <Label layout="330.0,140.0,70.0,45.0" text="RTD2 Offset" font="bold 14.0pt Tahoma" wordWrapEnabled="true"/>
+
+    <BoundLabel layout="330.0,180.0,70.00000000000011,20.0" font="bold 14.0pt Tahoma">
+      <BoundLabelBinding ord="station:|slot:/Drivers/NrioNetwork/NrioBoard/points/RTD2_Offset_Calc" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <ImageButton layout="340.0,30.0,50.0,50.0" text="HIGHER +1.0" font="bold 12.0pt Tahoma" background="#ff8000" wordWrapEnabled="true">
+      <IncrementSetPointBinding ord="station:|slot:/Drivers/NrioNetwork/NrioBoard/points/RTD2_Offset_1" widgetEvent="actionPerformed" increment="1.0"/>
+      <WsAnnotation name="wsAnnotation" value="66,66,8"/>
+    </ImageButton>
+
+    <ImageButton layout="340.0000000000001,255.0,50.0,50.0" text="LOWER -0.1" font="bold 12.0pt Tahoma" background="#8080ff" wordWrapEnabled="true">
+      <IncrementSetPointBinding ord="station:|slot:/Drivers/NrioNetwork/NrioBoard/points/RTD2_Offset_1" widgetEvent="actionPerformed" increment="-0.1"/>
+      <WsAnnotation name="wsAnnotation" value="70,70,8"/>
+    </ImageButton>
+
+    <ImageButton layout="340.0000000000001,320.0,50.0,50.0" text="LOWER -1.0" font="bold 12.0pt Tahoma" background="#8080ff" wordWrapEnabled="true">
+      <IncrementSetPointBinding ord="station:|slot:/Drivers/NrioNetwork/NrioBoard/points/RTD2_Offset_1" widgetEvent="actionPerformed" increment="-1.0"/>
+      <WsAnnotation name="wsAnnotation" value="70,70,8"/>
+    </ImageButton>
+
+    <ImageButton layout="340.0,90.0,50.0,50.0" text="HIGHER +0.1" font="bold 12.0pt Tahoma" background="#ff8000" wordWrapEnabled="true">
+      <IncrementSetPointBinding ord="station:|slot:/Drivers/NrioNetwork/NrioBoard/points/RTD2_Offset_1" widgetEvent="actionPerformed" increment="0.1"/>
+      <WsAnnotation name="wsAnnotation" value="66,66,8"/>
+    </ImageButton>
+
+    <BoundLabel layout="330.0,225.0,70.00000000000011,20.0" font="bold 14.0pt Tahoma">
+      <BoundLabelBinding ord="station:|slot:/Drivers/NrioNetwork/NrioBoard/points/RTD2" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="330.0,200.0,70.0,25.0" text="Value" font="bold 14.0pt Tahoma"/>
+
+    <Rect fill="#606060" stroke="black" geom="415.0,10.0,89.99999999999989,380.0"/>
+
+    <Rect fill="#e0e0e0" stroke="black" geom="425.0,20.0,69.99999999999989,360.0"/>
+
+    <Label layout="425.0,140.0,70.0,45.0" text="PT1   Offset" font="bold 14.0pt Tahoma" wordWrapEnabled="true"/>
+
+    <BoundLabel layout="425.0,180.0,70.00000000000011,20.0" font="bold 14.0pt Tahoma">
+      <BoundLabelBinding ord="station:|slot:/Drivers/NrioNetwork/NrioBoard/points/PT_1_Offset_Calc" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <ImageButton layout="435.0,30.0,50.0,50.0" text="HIGHER +1.0" font="bold 12.0pt Tahoma" background="#ff8000" wordWrapEnabled="true">
+      <IncrementSetPointBinding ord="station:|slot:/Drivers/NrioNetwork/NrioBoard/points/PT_1_Offset_1" widgetEvent="actionPerformed" increment="1.0"/>
+      <WsAnnotation name="wsAnnotation" value="66,66,8"/>
+    </ImageButton>
+
+    <ImageButton layout="435.0000000000001,255.0,50.0,50.0" text="LOWER -0.1" font="bold 12.0pt Tahoma" background="#8080ff" wordWrapEnabled="true">
+      <IncrementSetPointBinding ord="station:|slot:/Drivers/NrioNetwork/NrioBoard/points/PT_1_Offset_1" widgetEvent="actionPerformed" increment="-0.1"/>
+      <WsAnnotation name="wsAnnotation" value="70,70,8"/>
+    </ImageButton>
+
+    <ImageButton layout="435.0000000000001,320.0,50.0,50.0" text="LOWER -1.0" font="bold 12.0pt Tahoma" background="#8080ff" wordWrapEnabled="true">
+      <IncrementSetPointBinding ord="station:|slot:/Drivers/NrioNetwork/NrioBoard/points/PT_1_Offset_1" widgetEvent="actionPerformed" increment="-1.0"/>
+      <WsAnnotation name="wsAnnotation" value="70,70,8"/>
+    </ImageButton>
+
+    <ImageButton layout="435.0,90.0,50.0,50.0" text="HIGHER +0.1" font="bold 12.0pt Tahoma" background="#ff8000" wordWrapEnabled="true">
+      <IncrementSetPointBinding ord="station:|slot:/Drivers/NrioNetwork/NrioBoard/points/PT_1_Offset_1" widgetEvent="actionPerformed" increment="0.1"/>
+      <WsAnnotation name="wsAnnotation" value="66,66,8"/>
+    </ImageButton>
+
+    <BoundLabel layout="425.0,225.0,70.00000000000011,20.0" font="bold 14.0pt Tahoma">
+      <BoundLabelBinding ord="station:|slot:/Drivers/NrioNetwork/NrioBoard/points/PT_1" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="425.0,200.0,70.0,25.0" text="Value" font="bold 14.0pt Tahoma"/>
+
+    <Rect fill="#606060" stroke="black" geom="510.0,10.0,89.99999999999989,380.0"/>
+
+    <Rect fill="#e0e0e0" stroke="black" geom="520.0,20.0,69.99999999999989,360.0"/>
+
+    <Label layout="520.0,140.0,70.0,45.0" text="PT1   Scale" font="bold 14.0pt Tahoma" wordWrapEnabled="true"/>
+
+    <BoundLabel layout="520.0,180.0,70.00000000000011,20.0" font="bold 14.0pt Tahoma">
+      <BoundLabelBinding ord="station:|slot:/Drivers/NrioNetwork/NrioBoard/points/PT_1_Scale_Calc" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <ImageButton layout="530.0,30.0,50.0,50.0" text="HIGHER +1.0" font="bold 12.0pt Tahoma" background="#ff8000" wordWrapEnabled="true">
+      <IncrementSetPointBinding ord="station:|slot:/Drivers/NrioNetwork/NrioBoard/points/PT_1_Scale_1" widgetEvent="actionPerformed" increment="1.0"/>
+      <WsAnnotation name="wsAnnotation" value="66,66,8"/>
+    </ImageButton>
+
+    <ImageButton layout="530.0000000000001,255.0,50.0,50.0" text="LOWER -0.1" font="bold 12.0pt Tahoma" background="#8080ff" wordWrapEnabled="true">
+      <IncrementSetPointBinding ord="station:|slot:/Drivers/NrioNetwork/NrioBoard/points/PT_1_Scale_1" widgetEvent="actionPerformed" increment="-0.1"/>
+      <WsAnnotation name="wsAnnotation" value="70,70,8"/>
+    </ImageButton>
+
+    <ImageButton layout="530.0000000000001,320.0,50.0,50.0" text="LOWER -1.0" font="bold 12.0pt Tahoma" background="#8080ff" wordWrapEnabled="true">
+      <IncrementSetPointBinding ord="station:|slot:/Drivers/NrioNetwork/NrioBoard/points/PT_1_Scale_1" widgetEvent="actionPerformed" increment="-1.0"/>
+      <WsAnnotation name="wsAnnotation" value="70,70,8"/>
+    </ImageButton>
+
+    <ImageButton layout="530.0,90.0,50.0,50.0" text="HIGHER +0.1" font="bold 12.0pt Tahoma" background="#ff8000" wordWrapEnabled="true">
+      <IncrementSetPointBinding ord="station:|slot:/Drivers/NrioNetwork/NrioBoard/points/PT_1_Scale_1" widgetEvent="actionPerformed" increment="0.1"/>
+      <WsAnnotation name="wsAnnotation" value="66,66,8"/>
+    </ImageButton>
+
+    <BoundLabel layout="520.0,225.0,70.00000000000011,20.0" font="bold 14.0pt Tahoma">
+      <BoundLabelBinding ord="station:|slot:/Drivers/NrioNetwork/NrioBoard/points/PT_1" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="520.0,200.0,70.0,25.0" text="Value" font="bold 14.0pt Tahoma"/>
+
+    <ImageButton layout="0.0,225.0,100.0,135.0" text="Fine   Tuning" font="bold 16.0pt Tahoma" wordWrapEnabled="true">
+      <ValueBinding hyperlink="station:|slot:/FineTuning"/>
+      <WsAnnotation name="wsAnnotation" value="10,10,8"/>
+    </ImageButton>
+
+    <ImageButton layout="0.0,45.0,100.0,135.0" text="MAIN" font="bold 16.0pt Tahoma">
+      <ValueBinding hyperlink="station:|slot:/"/>
+      <WsAnnotation name="wsAnnotation" value="10,10,8"/>
+    </ImageButton>
+
+    <Label layout="0.0,0.0,210.0,30.0" text="Sensor Adjust" font="20.0pt Tahoma" foreground="white" background="blue"/>
+
+    <Label layout="10.0,375.0,30.0,25.0" text="AD"/>
+
+  </CanvasPane>
+
+
+</content>
+</px>

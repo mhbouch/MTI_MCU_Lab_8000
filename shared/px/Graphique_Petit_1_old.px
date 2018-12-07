@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Niagara Presentation XML -->
+<px version="1.0" media="workbench:WbPxMedia">
+<import>
+  <module name="baja"/>
+  <module name="bajaui"/>
+  <module name="converters"/>
+  <module name="gx"/>
+  <module name="kitPx"/>
+</import>
+<content>
+
+
+  <CanvasPane name="content" viewSize="600.0,400.0" background="linearGradient( angle(-45.0) stop(0.35% #088cf5) stop(50.0% #71b4e9) stop(100.0% #088cf5) )">
+
+    <Polygon stroke="black" geom="105.0,40.0 205.0,40.0 205.0,160.0 105.0,160.0 "/>
+
+    <Rect fill="#606060" stroke="black" geom="0.0,240.0,89.99999999999989,75.00000000000003"/>
+
+    <Polygon fill="silver" stroke="black" geom="220.0,5.0 275.0,5.0 275.0,45.0 220.0,45.0 "/>
+
+    <Rect fill="#606060" stroke="black" geom="0.0,155.0,89.99999999999989,75.00000000000003"/>
+
+    <Label layout="140.0,95.0,350.0,255.0" image="file:^px/HE1MultiCouileur.gif"/>
+
+    <Rect fill="#606060" stroke="black" geom="499.99999999999994,5.0,100.00000000000006,200.0"/>
+
+    <Rect fill="#e0e0e0" stroke="black" geom="509.99999999999994,20.0,80.00000000000006,174.99999999999997"/>
+
+    <ImageButton layout="525.0,30.0,50.0,50.0" text="ON" font="bold 16.0pt Tahoma" background="#00c000">
+      <ActionBinding ord="station:|slot:/Programme/Start_Stop/LocalStart/fire" widgetEvent="actionPerformed"/>
+    </ImageButton>
+
+    <ImageButton layout="525.0,135.0,50.000000000000114,50.0" text="OFF" font="bold 16.0pt Tahoma" background="red">
+      <ActionBinding ord="station:|slot:/Programme/Start_Stop/LocalStop/fire" widgetEvent="actionPerformed"/>
+    </ImageButton>
+
+    <Label layout="510.00000000000006,90.0,74.99999999999983,20.0" text="Status" font="bold 14.0pt Tahoma"/>
+
+    <BoundLabel layout="510.00000000000006,110.0,79.99999999999994,20.0" font="bold 14.0pt Tahoma">
+      <BoundLabelBinding ord="station:|slot:/Programme/MachineStatus" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+        <IStatusToSimple name="background">
+          <Brush name="disabled" value="#dddddd"/>
+          <Brush name="fault" value="#ffaa26"/>
+          <Brush name="down" value="yellow"/>
+          <Brush name="alarm" value="red"/>
+          <Brush name="stale" value="#d6cbae"/>
+          <Brush name="overridden" value="#d88aff"/>
+          <Brush name="nullStatus" value="null"/>
+          <Brush name="unackedAlarm" value="null"/>
+        </IStatusToSimple>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Rect fill="#606060" stroke="black" geom="499.99999999999994,205.0,100.00000000000006,200.0"/>
+
+    <Rect fill="#e0e0e0" stroke="black" geom="509.99999999999994,215.0,80.00000000000006,175.0"/>
+
+    <Label layout="510.00000000000006,275.0,79.99999999999994,35.0" text="Liquid Setpoint" font="bold 14.0pt Tahoma" wordWrapEnabled="true"/>
+
+    <BoundLabel layout="510.00000000000006,305.0,79.99999999999994,20.0" font="bold 14.0pt Tahoma">
+      <BoundLabelBinding ord="station:|slot:/Programme/Operator_SP_Calc" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+        <IStatusToSimple name="background">
+          <Brush name="disabled" value="#dddddd"/>
+          <Brush name="fault" value="#ffaa26"/>
+          <Brush name="down" value="yellow"/>
+          <Brush name="alarm" value="red"/>
+          <Brush name="stale" value="#d6cbae"/>
+          <Brush name="overridden" value="#d88aff"/>
+          <Brush name="nullStatus" value="null"/>
+          <Brush name="unackedAlarm" value="null"/>
+        </IStatusToSimple>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="320.0,125.0,45.0,20.0" text="CV3" font="bold 12.0pt Tahoma"/>
+
+    <BoundLabel layout="320.0,140.0,44.999999999999886,20.0" font="bold 12.0pt Tahoma">
+      <BoundLabelBinding ord="station:|slot:/Programme/Cmd_CV3" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+        <IStatusToSimple name="background">
+          <Brush name="disabled" value="#dddddd"/>
+          <Brush name="fault" value="#ffaa26"/>
+          <Brush name="down" value="yellow"/>
+          <Brush name="alarm" value="red"/>
+          <Brush name="stale" value="#d6cbae"/>
+          <Brush name="overridden" value="#d88aff"/>
+          <Brush name="nullStatus" value="null"/>
+          <Brush name="unackedAlarm" value="null"/>
+        </IStatusToSimple>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="318.0,55.0,45.0,20.0" text="CV2" font="bold 12.0pt Tahoma"/>
+
+    <BoundLabel layout="315.0,74.0,49.999999999999886,20.0" font="bold 12.0pt Tahoma">
+      <BoundLabelBinding ord="station:|slot:/Programme/Cmd_CV2" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+        <IStatusToSimple name="background">
+          <Brush name="disabled" value="#dddddd"/>
+          <Brush name="fault" value="#ffaa26"/>
+          <Brush name="down" value="yellow"/>
+          <Brush name="alarm" value="red"/>
+          <Brush name="stale" value="#d6cbae"/>
+          <Brush name="overridden" value="#d88aff"/>
+          <Brush name="nullStatus" value="null"/>
+          <Brush name="unackedAlarm" value="null"/>
+        </IStatusToSimple>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="317.5,190.0,45.0,20.0" text="CV1" font="bold 12.0pt Tahoma"/>
+
+    <BoundLabel layout="315.0,205.0,50.0,20.0" font="bold 12.0pt Tahoma">
+      <BoundLabelBinding ord="station:|slot:/Programme/Cmd_CV1" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+        <IStatusToSimple name="background">
+          <Brush name="disabled" value="#dddddd"/>
+          <Brush name="fault" value="#ffaa26"/>
+          <Brush name="down" value="yellow"/>
+          <Brush name="alarm" value="red"/>
+          <Brush name="stale" value="#d6cbae"/>
+          <Brush name="overridden" value="#d88aff"/>
+          <Brush name="nullStatus" value="null"/>
+          <Brush name="unackedAlarm" value="null"/>
+        </IStatusToSimple>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <ImageButton layout="525.0,225.0,50.0,50.0" text="+" font="bold 28.0pt Tahoma" background="#ff8000">
+      <IncrementSetPointBinding ord="station:|slot:/Programme/Operator_SP_1" widgetEvent="actionPerformed" increment="1.0"/>
+      <WsAnnotation name="wsAnnotation" value="66,66,8"/>
+    </ImageButton>
+
+    <ImageButton layout="525.0,330.0,50.0,50.0" text="-" font="bold 48.0pt Tahoma" background="#8080ff">
+      <IncrementSetPointBinding ord="station:|slot:/Programme/Operator_SP_1" widgetEvent="actionPerformed" increment="-1.0"/>
+      <WsAnnotation name="wsAnnotation" value="70,70,8"/>
+    </ImageButton>
+
+    <BoundLabel layout="300.0,270.0,100.0,20.0" font="bold 16.0pt Tahoma">
+      <BoundLabelBinding ord="station:|slot:/Programme/FS" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+        <IBooleanToSimple name="foreground">
+          <Brush name="trueValue" value="black"/>
+          <Brush name="falseValue" value="red"/>
+        </IBooleanToSimple>
+        <IStatusToSimple name="background">
+          <Brush name="disabled" value="#dddddd"/>
+          <Brush name="fault" value="#ffaa26"/>
+          <Brush name="down" value="yellow"/>
+          <Brush name="alarm" value="red"/>
+          <Brush name="stale" value="#d6cbae"/>
+          <Brush name="overridden" value="#d88aff"/>
+          <Brush name="nullStatus" value="null"/>
+          <Brush name="unackedAlarm" value="null"/>
+        </IStatusToSimple>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <BoundLabel layout="115.0,305.0,95.0,20.0" font="20.0pt Tahoma" halign="left">
+      <BoundLabelBinding ord="station:|slot:/Programme/RTD1" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+        <IStatusToSimple name="background">
+          <Brush name="disabled" value="#dddddd"/>
+          <Brush name="fault" value="#ffaa26"/>
+          <Brush name="down" value="yellow"/>
+          <Brush name="alarm" value="red"/>
+          <Brush name="stale" value="#d6cbae"/>
+          <Brush name="overridden" value="#d88aff"/>
+          <Brush name="nullStatus" value="null"/>
+          <Brush name="unackedAlarm" value="null"/>
+        </IStatusToSimple>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <BoundLabel layout="330.0,300.0,95.0,20.0" font="20.0pt Tahoma">
+      <BoundLabelBinding ord="station:|slot:/Programme/RTD2" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+        <IStatusToSimple name="background">
+          <Brush name="disabled" value="#dddddd"/>
+          <Brush name="fault" value="#ffaa26"/>
+          <Brush name="down" value="yellow"/>
+          <Brush name="alarm" value="red"/>
+          <Brush name="stale" value="#d6cbae"/>
+          <Brush name="overridden" value="#d88aff"/>
+          <Brush name="nullStatus" value="null"/>
+          <Brush name="unackedAlarm" value="null"/>
+        </IStatusToSimple>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <BoundLabel layout="115.0,125.0,84.99999999999997,29.99999999999997" font="20.0pt Tahoma" halign="left">
+      <BoundLabelBinding ord="station:|slot:/Programme/PT" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+        <IStatusToSimple name="background">
+          <Brush name="disabled" value="#dddddd"/>
+          <Brush name="fault" value="#ffaa26"/>
+          <Brush name="down" value="yellow"/>
+          <Brush name="alarm" value="red"/>
+          <Brush name="stale" value="#d6cbae"/>
+          <Brush name="overridden" value="#d88aff"/>
+          <Brush name="nullStatus" value="null"/>
+          <Brush name="unackedAlarm" value="null"/>
+        </IStatusToSimple>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="115.0,105.0,65.0,20.0" text="Actual" font="16.0pt Tahoma" halign="left"/>
+
+    <Polygon fill="lime" stroke="black" geom="135.0,332.0 145.0,327.0 145.0,337.0 "/>
+
+    <Rect fill="lime" stroke="black" geom="145.0,330.0,39.99999999999994,5.0"/>
+
+    <Polygon fill="lime" stroke="black" geom="350.0,330.0 360.0,325.0 360.0,335.0 "/>
+
+    <Rect fill="lime" stroke="black" geom="360.0,327.5,49.99999999999994,5.0"/>
+
+    <BoundLabel layout="275.0,270.0,15.0,20.0">
+      <BoundLabelBinding ord="station:|slot:/Programme/No_Flow_Alarm" statusEffect="none">
+        <ObjectToString name="text" format=""/>
+        <IBooleanToSimple name="border">
+          <Border name="trueValue" value="1.0 solid red"/>
+          <Border name="falseValue" value="0.0 none black"/>
+        </IBooleanToSimple>
+        <IBooleanToSimple name="blink"/>
+        <IBooleanToSimple name="background">
+          <Brush name="trueValue" value="red"/>
+          <Brush name="falseValue" value="null"/>
+        </IBooleanToSimple>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <BoundLabel layout="300.0,10.0,175.0,25.0" font="20.0pt Tahoma">
+      <BoundLabelBinding ord="station:|slot:/Programme/T_Sens_Error" statusEffect="none">
+        <ObjectToString name="text" format="Sensor : %out.value%"/>
+        <IBooleanToSimple name="foreground">
+          <Brush name="trueValue" value="red"/>
+          <Brush name="falseValue" value="null"/>
+        </IBooleanToSimple>
+        <IBooleanToSimple name="blink"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="115.0,190.0,100.0,20.0" text="Actual T SP" font="16.0pt Tahoma" halign="left"/>
+
+    <BoundLabel layout="115.0,215.0,95.0,20.0" font="20.0pt Tahoma" halign="left">
+      <BoundLabelBinding ord="station:|slot:/Programme/Calculated_Setpoint" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+        <IStatusToSimple name="background">
+          <Brush name="disabled" value="#dddddd"/>
+          <Brush name="fault" value="#ffaa26"/>
+          <Brush name="down" value="yellow"/>
+          <Brush name="alarm" value="red"/>
+          <Brush name="stale" value="#d6cbae"/>
+          <Brush name="overridden" value="#d88aff"/>
+          <Brush name="nullStatus" value="null"/>
+          <Brush name="unackedAlarm" value="null"/>
+        </IStatusToSimple>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="430.0,110.0,45.0,20.0" text="STEAM" font="bold 12.0pt Tahoma"/>
+
+    <Label layout="405.0,234.0,85.0,15.0" text="CONDENSATE" font="bold 12.0pt Tahoma"/>
+
+    <Polygon fill="lime" stroke="black" geom="405.0,280.0 415.0,275.0 415.0,285.0 "/>
+
+    <Label layout="420.0,272.0,50.00000000000006,15.0" text="LIQUID" font="bold 12.0pt Tahoma"/>
+
+    <Polygon fill="lime" stroke="black" geom="397.00000000000006,236.0 407.0,241.0 397.0,246.0 "/>
+
+    <Polygon fill="lime" stroke="black" geom="415.0,120.0 425.0,115.0 425.0,125.0 "/>
+
+    <ImageButton layout="10.0,250.0,70.00000000000006,54.99999999999997" text="Reset Sensor Alarm" font="14.0pt Tahoma" wordWrapEnabled="true">
+      <ActionBinding ord="station:|slot:/Programme/LocalSensorFaultReset/fire" widgetEvent="actionPerformed"/>
+    </ImageButton>
+
+    <LogoffButton layout="10.0,165.0,70.0,55.0" image="module://icons/x16/door.png">
+      <WsAnnotation name="wsAnnotation" value="34,34,8"/>
+    </LogoffButton>
+
+    <Rect fill="#606060" stroke="black" geom="0.0,325.0,89.99999999999989,75.00000000000003"/>
+
+    <ImageButton layout="10.0,335.0,69.99999999999994,55.0" text="Fine Tuning" font="bold 14.0pt Tahoma" wordWrapEnabled="true">
+      <ValueBinding hyperlink="station:|slot:/FineTuning"/>
+      <WsAnnotation name="wsAnnotation" value="10,10,8"/>
+    </ImageButton>
+
+    <BoundLabel layout="220.0,5.0,55.0,40.0" font="14.0pt Tahoma" wordWrapEnabled="true">
+      <BoundLabelBinding ord="station:|slot:/Programme/AlarmCount" hyperlink="station:|slot:/AlarmDisplay" statusEffect="none">
+        <ObjectToString name="text" format="Alarms   %out.value%"/>
+        <IStatusToSimple name="background">
+          <Brush name="disabled" value="#dddddd"/>
+          <Brush name="fault" value="#ffaa26"/>
+          <Brush name="down" value="yellow"/>
+          <Brush name="alarm" value="red"/>
+          <Brush name="stale" value="#d6cbae"/>
+          <Brush name="overridden" value="#d88aff"/>
+          <Brush name="nullStatus" value="null"/>
+          <Brush name="unackedAlarm" value="null"/>
+        </IStatusToSimple>
+        <IStatusToSimple name="blink">
+          <Boolean name="alarm" value="true"/>
+        </IStatusToSimple>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Polygon geom="300.0,295.0 330.0,295.0 315.0,320.0 ">
+      <ValueBinding ord="station:|slot:/Programme/LT_Alarm" hyperlink="station:|slot:/AlarmDisplay">
+        <IBooleanToSimple name="fill">
+          <Brush name="trueValue" value="red"/>
+          <Brush name="falseValue" value="null"/>
+        </IBooleanToSimple>
+      </ValueBinding>
+    </Polygon>
+
+    <Polygon geom="90.0,325.0 110.0,325.0 100.0,300.0 ">
+      <ValueBinding ord="station:|slot:/Programme/HT_Alarm" hyperlink="station:|slot:/AlarmDisplay">
+        <IBooleanToSimple name="fill">
+          <Brush name="trueValue" value="red"/>
+          <Brush name="falseValue" value="null"/>
+        </IBooleanToSimple>
+      </ValueBinding>
+    </Polygon>
+
+    <Label layout="0.0,0.0,85.0,62.0" image="file:^px/LOGOMaxiThermSmal1.gif"/>
+
+    <Label layout="0.0,45.0,85.0,15.000000000000014" text="maxi-therm.net" font="10.0pt Tahoma" background="white"/>
+
+    <Label layout="115.0,40.0,65.0,20.0" text="Steam" font="16.0pt Tahoma" halign="left"/>
+
+    <Label layout="115.0,60.0,65.0,20.0" text="SetPoint" font="16.0pt Tahoma" halign="left"/>
+
+    <BoundLabel layout="115.0,80.0,70.0,20.0" font="bold 16.0pt Tahoma" halign="left">
+      <BoundLabelBinding ord="station:|slot:/Programme/PT_SP_Calc" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <BoundLabel layout="225.0,305.0,40.0,20.0" font="bold 16.0pt Tahoma">
+      <BoundLabelBinding ord="station:|slot:/Programme/Cmd_P3" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+        <IStatusToSimple name="background">
+          <Brush name="disabled" value="#d6d6d6"/>
+          <Brush name="fault" value="#fc7734"/>
+          <Brush name="down" value="#fac600"/>
+          <Brush name="alarm" value="#cf1624"/>
+          <Brush name="stale" value="#d9c09d"/>
+          <Brush name="overridden" value="#bfaddd"/>
+          <Brush name="nullStatus" value="null"/>
+          <Brush name="unackedAlarm" value="null"/>
+          <Brush name="ok" value="null"/>
+        </IStatusToSimple>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <BoundLabel layout="105.0,170.0,100.0,20.0" font="14.0pt Tahoma">
+      <BoundLabelBinding ord="station:|slot:/Programme/SetPointStatus1" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="110.0,380.0,30.0,20.0" text="AD"/>
+
+    <BoundLabel layout="225.0,328.0,41.0,25.0">
+      <ValueBinding ord="station:|slot:/Programme/Cmd_P3">
+        <IBooleanToSimple name="image">
+          <Image name="trueValue" value="module://kitPxHvac/equipment/pumpRightTrue.gif"/>
+          <Image name="falseValue" value="module://kitPxHvac/equipment/pumpRightFalse.gif"/>
+        </IBooleanToSimple>
+      </ValueBinding>
+    </BoundLabel>
+
+    <BoundLabel layout="160.0,365.0,240.0,20.0" font="bold 18.0pt Tahoma">
+      <BoundLabelBinding ord="station:|slot:/Drivers/NdioNetwork/NdioBoard/points/E_Stop" statusEffect="none">
+        <ObjectToString name="text" format="Emergency Stop %out.value%"/>
+        <IBooleanToSimple name="foreground">
+          <Brush name="trueValue" value="red"/>
+          <Brush name="falseValue" value="null"/>
+        </IBooleanToSimple>
+        <IBooleanToSimple name="blink"/>
+        <IBooleanToSimple name="enabled"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <BoundLabel layout="370.0,50.0,130.0,50.0" font="20.0pt Tahoma" blink="true" wordWrapEnabled="true">
+      <BoundLabelBinding ord="station:|slot:/Programme/S$2dS_and_Alarm_Control/EStop/out/value" summary="%display.value%" popupEnabled="false">
+        <ObjectToString name="text" format="Emergency Stop"/>
+        <IBooleanToSimple name="foreground">
+          <Brush name="trueValue" value="#e21031"/>
+          <Brush name="falseValue" value="null"/>
+        </IBooleanToSimple>
+        <IBooleanToSimple name="visible"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+  </CanvasPane>
+
+
+</content>
+</px>

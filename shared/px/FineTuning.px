@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Niagara Presentation XML -->
+<px version="1.0" media="workbench:WbPxMedia">
+<import>
+  <module name="baja"/>
+  <module name="bajaui"/>
+  <module name="gx"/>
+  <module name="kitPx"/>
+</import>
+<content>
+
+
+  <CanvasPane name="content" viewSize="600.0,400.0" background="linearGradient( angle(-45.0) stop(0.35% #088cf5) stop(50.0% #71b4e9) stop(100.0% #088cf5) )">
+
+    <ImageButton layout="140.0,10.0,100.0,70.0" text="Sensor Adjust" font="bold 16.0pt Tahoma" wordWrapEnabled="true">
+      <ValueBinding hyperlink="station:|slot:/SensorAdjust"/>
+      <WsAnnotation name="wsAnnotation" value="10,10,8"/>
+    </ImageButton>
+
+    <ImageButton layout="10.0,10.0,100.0,135.0" text="MAIN" font="bold 16.0pt Tahoma">
+      <ValueBinding hyperlink="station:|slot:/GraphiquePetit"/>
+      <WsAnnotation name="wsAnnotation" value="10,10,8"/>
+    </ImageButton>
+
+    <ImageButton layout="140.0,90.0,100.0,70.0" text="T Alarm Adjust" font="bold 16.0pt Tahoma" wordWrapEnabled="true">
+      <ValueBinding hyperlink="station:|slot:/TempAlarmAdjust"/>
+      <WsAnnotation name="wsAnnotation" value="10,10,8"/>
+    </ImageButton>
+
+    <ImageButton layout="140.0,170.0,100.0,70.0" text="Steam Pressure Adjust" font="bold 16.0pt Tahoma" wordWrapEnabled="true">
+      <ValueBinding hyperlink="station:|slot:/SteamPressureAdjust"/>
+      <WsAnnotation name="wsAnnotation" value="10,10,8"/>
+    </ImageButton>
+
+    <ImageButton layout="140.0,255.0,100.0,70.0" text="Hot Liquid Loop  Adjust" font="bold 16.0pt Tahoma" wordWrapEnabled="true">
+      <ValueBinding hyperlink="station:|slot:/Hot$20liqued$20Adjust"/>
+      <WsAnnotation name="wsAnnotation" value="10,10,8"/>
+    </ImageButton>
+
+    <ImageButton layout="270.0,10.0,100.0,70.0" text="BACNet  Parameters" font="bold 16.0pt Tahoma" wordWrapEnabled="true">
+      <ValueBinding hyperlink="station:|slot:/BACNet_Param"/>
+      <WsAnnotation name="wsAnnotation" value="10,10,8"/>
+    </ImageButton>
+
+    <Label layout="15.0,370.0,30.0,20.0" text="AD"/>
+
+  </CanvasPane>
+
+
+</content>
+</px>

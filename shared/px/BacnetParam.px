@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Niagara Presentation XML -->
+<px version="1.0" media="workbench:WbPxMedia">
+<import>
+  <module name="bacnet"/>
+  <module name="baja"/>
+  <module name="bajaui"/>
+  <module name="gx"/>
+  <module name="kitPx"/>
+  <module name="workbench"/>
+</import>
+<content>
+<CanvasPane viewSize="600.0,400.0" background="linearGradient( angle(-45.0) stop(0.35% #088cf5) stop(50.0% #71b4e9) stop(100.0% #088cf5) )">
+
+  <Polygon stroke="black" geom="185.0,210.0 580.0,210.0 580.0,290.0 185.0,290.0 "/>
+
+  <Polygon stroke="black" geom="185.0,135.0 580.0,135.0 580.0,200.0 185.0,200.0 "/>
+
+  <Label layout="240.0,220.0,275.0,20.0" text="This contoler Mac is fixed" font="16.0pt Tahoma"/>
+
+  <GridPane layout="190.0,150.0,372.0,19.0">
+
+    <Label text="Object Id Instance" font="16.0pt Tahoma" halign="left"/>
+
+    <GenericFieldEditor>
+      <WbFieldEditorBinding ord="station:|slot:/Drivers/BacnetNetwork/localDevice/objectId"/>
+    </GenericFieldEditor>
+
+    <Label text="Object Id Instance" font="16.0pt Tahoma" halign="left"/>
+
+    <Label text="Object Id Instance" font="16.0pt Tahoma" halign="left"/>
+
+    <Label text="Object Id Instance" font="16.0pt Tahoma" halign="left"/>
+
+  </GridPane>
+
+  <SaveButton layout="315.0,340.0,100.0,30.0" image="module://icons/x16/save.png">
+    <WsAnnotation name="wsAnnotation" value="14,14,8"/>
+  </SaveButton>
+
+  <Label layout="240.0,240.0,275.0,20.0" text="To IP address plus &#x22;:0xBAC0&#x22;" font="16.0pt Tahoma"/>
+
+  <Label layout="240.0,260.0,275.0,20.0" text="As: 192.168.1.141:0xBAC0" font="16.0pt Tahoma"/>
+
+  <Label layout="245.0,175.0,275.0,20.0" text="Use Windows Keyboard to change" font="16.0pt Tahoma"/>
+
+  <Label layout="240.0,310.0,275.0,20.0" text="Press save to confirm change" font="16.0pt Tahoma"/>
+
+  <Label layout="20.0,10.0,210.0,30.0" text="BACNet Parameters" font="20.0pt Tahoma" foreground="white" background="blue"/>
+
+  <ImageButton layout="45.0,60.0,100.0,135.0" text="MAIN" font="bold 16.0pt Tahoma">
+    <ValueBinding hyperlink="station:|slot:/"/>
+    <WsAnnotation name="wsAnnotation" value="10,10,8"/>
+  </ImageButton>
+
+  <ImageButton layout="45.0,240.0,100.0,135.0" text="Fine   Tuning" font="bold 16.0pt Tahoma" wordWrapEnabled="true">
+    <ValueBinding hyperlink="station:|slot:/FineTuning"/>
+    <WsAnnotation name="wsAnnotation" value="10,10,8"/>
+  </ImageButton>
+
+</CanvasPane>
+</content>
+</px>

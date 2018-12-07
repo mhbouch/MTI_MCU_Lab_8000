@@ -1,0 +1,359 @@
+INFO [nre] Launching Niagara Runtime Environment
+INFO [10:41:42 16-Oct-18 EDT][nre] Booting
+INFO [10:41:54 16-Oct-18 EDT][sys] Logging initialized
+INFO [10:42:10 16-Oct-18 EDT][sys.registry] Up-to-date [274ms]
+INFO [10:42:10 16-Oct-18 EDT][sys.registry] Loaded [475ms]
+INFO [10:42:16 16-Oct-18 EDT][sys] Niagara runtime booted ("/opt/niagara") on Qnx-TITAN-3A4B-8868-D053-10B4 (35291ms)
+INFO [10:42:16 16-Oct-18 EDT][sys] Loading "/home/niagara/stations/MTI_MCU_Lab_8000/config.bog"...
+INFO [10:42:45 16-Oct-18 EDT][sys] Loaded (29324ms)
+INFO [10:42:50 16-Oct-18 EDT][alarm.database] Loading...
+INFO [10:42:51 16-Oct-18 EDT][alarm.database] Loaded [460ms, 132 alarms, 264 pages]
+WARNING [10:42:51 16-Oct-18 EDT][platDataRecovery.service] Recovery data detected, replaying...
+INFO [10:42:52 16-Oct-18 EDT][sys] DataRecoveryService restoration check complete (2530ms)
+INFO [10:43:05 16-Oct-18 EDT][sys] Services Initialized (13100ms)
+INFO [10:43:05 16-Oct-18 EDT][sys.mixin] Updated [71ms]
+INFO [10:43:07 16-Oct-18 EDT][sys.mixin] Updated [27ms]
+INFO [10:43:07 16-Oct-18 EDT][history.db] Starting async warmup of history config index...
+INFO [10:43:07 16-Oct-18 EDT][history.db] Async history config index warmup completed in 18 ms.
+INFO [10:43:13 16-Oct-18 EDT][web] Jetty web server started on HTTP port 80
+INFO [10:43:14 16-Oct-18 EDT][tagdictionary] Niagara tagdictionary is out of date or has been modified.
+INFO [10:43:14 16-Oct-18 EDT][tagdictionary] Niagara tagdictionary has been reloaded.
+WARNING [10:43:14 16-Oct-18 EDT][bacnet.server] Unable to resolve point ord for Drivers.NdioNetwork.NrioBoard.points.FS [binaryValue:17]: h:d40
+WARNING [10:43:14 16-Oct-18 EDT][bacnet.server] Unable to resolve point ord for Drivers.NdioNetwork.NdioBoard.points.CV2_Analog [analogValue:4]: h:9d4
+INFO [10:43:15 16-Oct-18 EDT][NrioNetwork] Opened COM1
+INFO [10:43:15 16-Oct-18 EDT][NrioNetwork.unsolicited] NrioUnsolicetedReceive thread started.
+WARNING [10:43:17 16-Oct-18 EDT][sys.program] Program not signed. The ability to run unsigned programs will be removed in a future release.
+INFO [10:43:21 16-Oct-18 EDT][fox] FOX server started on port [1911]
+INFO [10:43:21 16-Oct-18 EDT][sys] Niagara Runtime Environment: 4.3.58.18.1
+INFO [10:43:21 16-Oct-18 EDT][sys] *** Station Started (16080ms) [100459ms total] ***
+niagara>INFO [10:43:21 16-Oct-18 EDT][sys] Saving station...
+INFO [10:43:25 16-Oct-18 EDT][history.db] Saved history archive (217ms)
+INFO [10:43:27 16-Oct-18 EDT][sys] Saved /home/niagara/stations/MTI_MCU_Lab_8000/config.bog (4443ms)
+INFO [10:43:41 16-Oct-18 EDT][NrioNetwork.wrIo] wrThread running
+WARNING [10:44:16 16-Oct-18 EDT][hx.px.cache] unresolved: station:|slot:/Programme/FS
+WARNING [10:44:16 16-Oct-18 EDT][hx.px.cache] unresolved: station:|slot:/Drivers/NrioNetwork/NrioBoard/points/RTD2
+WARNING [10:44:17 16-Oct-18 EDT][hx.px.cache] unresolved: station:|slot:/Drivers/NdioNetwork/NdioBoard/points/E_Stop
+INFO [10:43:33 17-Oct-18 EDT][sys] Saving station...
+INFO [10:43:34 17-Oct-18 EDT][history.db] Saved history archive (92ms)
+INFO [10:43:37 17-Oct-18 EDT][sys] Saved /home/niagara/stations/MTI_MCU_Lab_8000/config.bog (3703ms)
+WARNING [10:40:32 18-Oct-18 EDT][sys.engine] System clock modified: -8865ms
+INFO [10:43:25 18-Oct-18 EDT][sys] Saving station...
+INFO [10:43:27 18-Oct-18 EDT][history.db] Saved history archive (195ms)
+INFO [10:43:29 18-Oct-18 EDT][sys] Saved /home/niagara/stations/MTI_MCU_Lab_8000/config.bog (3207ms)
+INFO [10:43:27 19-Oct-18 EDT][sys] Saving station...
+INFO [10:43:28 19-Oct-18 EDT][history.db] Saved history archive (92ms)
+INFO [10:43:29 19-Oct-18 EDT][sys] Saved /home/niagara/stations/MTI_MCU_Lab_8000/config.bog (2537ms)
+WARNING [10:40:29 20-Oct-18 EDT][sys.engine] System clock modified: -8794ms
+INFO [10:43:20 20-Oct-18 EDT][sys] Saving station...
+INFO [10:43:21 20-Oct-18 EDT][history.db] Saved history archive (123ms)
+INFO [10:43:23 20-Oct-18 EDT][sys] Saved /home/niagara/stations/MTI_MCU_Lab_8000/config.bog (2868ms)
+INFO [10:43:21 21-Oct-18 EDT][sys] Saving station...
+INFO [10:43:22 21-Oct-18 EDT][history.db] Saved history archive (203ms)
+INFO [10:43:24 21-Oct-18 EDT][sys] Saved /home/niagara/stations/MTI_MCU_Lab_8000/config.bog (3279ms)
+WARNING [10:36:54 22-Oct-18 EDT][hx.px.cache] unresolved: station:|slot:/Programme/FS
+WARNING [10:36:54 22-Oct-18 EDT][hx.px.cache] unresolved: station:|slot:/Drivers/NrioNetwork/NrioBoard/points/RTD2
+WARNING [10:36:54 22-Oct-18 EDT][hx.px.cache] unresolved: station:|slot:/Drivers/NdioNetwork/NdioBoard/points/E_Stop
+WARNING [10:37:41 22-Oct-18 EDT][hx.px.cache] unresolved: station:|slot:/Programme/FS
+WARNING [10:37:41 22-Oct-18 EDT][hx.px.cache] unresolved: station:|slot:/Drivers/NrioNetwork/NrioBoard/points/RTD2
+WARNING [10:37:41 22-Oct-18 EDT][hx.px.cache] unresolved: station:|slot:/Drivers/NdioNetwork/NdioBoard/points/E_Stop
+WARNING [10:38:03 22-Oct-18 EDT][hx.px.cache] unresolved: station:|slot:/Programme/FS
+WARNING [10:38:03 22-Oct-18 EDT][hx.px.cache] unresolved: station:|slot:/Drivers/NdioNetwork/NdioBoard/points/E_Stop
+WARNING [10:38:04 22-Oct-18 EDT][hx.px] Station Theme differs from Selected Hx Theme for oper: Zebra != Lucid
+WARNING [10:40:26 22-Oct-18 EDT][sys.engine] System clock modified: -8789ms
+INFO [10:43:14 22-Oct-18 EDT][sys] Saving station...
+INFO [10:43:15 22-Oct-18 EDT][history.db] Saved history archive (218ms)
+INFO [10:43:17 22-Oct-18 EDT][sys] Saved /home/niagara/stations/MTI_MCU_Lab_8000/config.bog (2697ms)
+INFO [13:02:49 22-Oct-18 EDT][fox] Opened: abce8389b0c77896a6db3059ee0b91ace7594cbcdecb6fa11b <- 851f1594cf029f882cec4ec9ad9d1d2f73dbab837c3302cf5a :: Workbench @ DESKTOP-0BOAD0F
+WARNING [13:06:24 22-Oct-18 EDT][hx.px.cache] unresolved: station:|slot:/Drivers/NrioNetwork/NrioBoard/points/RTD2
+WARNING [13:08:17 22-Oct-18 EDT][hx.px.cache] unresolved: station:|slot:/Programme/FS
+WARNING [13:08:17 22-Oct-18 EDT][hx.px.cache] unresolved: station:|slot:/Drivers/NdioNetwork/NdioBoard/points/E_Stop
+WARNING [13:09:00 22-Oct-18 EDT][hx.px.cache] unresolved: station:|slot:/Programme/FS
+WARNING [13:09:00 22-Oct-18 EDT][hx.px.cache] unresolved: station:|slot:/Drivers/NdioNetwork/NdioBoard/points/E_Stop
+INFO [13:10:28 22-Oct-18 EDT][fox] Closed: abce8389b0c77896a6db3059ee0b91ace7594cbcdecb6fa11b <- 851f1594cf029f882cec4ec9ad9d1d2f73dbab837c3302cf5a :: Workbench @ DESKTOP-0BOAD0F
+INFO [13:13:02 22-Oct-18 EDT][fox] Opened: 3229c3dcefa125d498e07198caad49ce607bfab730e3e42a9f <- b4589287be91f085fcb03d95cbe9dee5ba219c8f98133bc14e :: Workbench @ DESKTOP-0BOAD0F
+WARNING [13:15:19 22-Oct-18 EDT][hx.px.cache] unresolved: station:|slot:/Drivers/NrioNetwork/NrioBoard/points/RTD2
+INFO [13:15:48 22-Oct-18 EDT][sys] Saving station...
+INFO [13:15:49 22-Oct-18 EDT][history.db] Saved history archive (104ms)
+INFO [13:15:51 22-Oct-18 EDT][sys] Saved /home/niagara/stations/MTI_MCU_Lab_8000/config.bog (2639ms)
+WARNING [13:17:27 22-Oct-18 EDT][hx.px.cache] unresolved: station:|slot:/Programme/FS
+WARNING [13:17:27 22-Oct-18 EDT][hx.px.cache] unresolved: station:|slot:/Drivers/NdioNetwork/NdioBoard/points/E_Stop
+WARNING [13:17:33 22-Oct-18 EDT][hx.px.cache] unresolved: station:|slot:/Drivers/NrioNetwork/NrioBoard/points/RTD2
+WARNING [13:20:08 22-Oct-18 EDT][hx.px.cache] unresolved: station:|slot:/Programme/FS
+WARNING [13:20:08 22-Oct-18 EDT][hx.px.cache] unresolved: station:|slot:/Drivers/NdioNetwork/NdioBoard/points/E_Stop
+INFO [13:25:05 22-Oct-18 EDT][fox] Opened: 7c8410e4ea3b5a246d75876d5bd74c023cb08c3277994b7ce5 <- 56a56c7bd55092be56355182b9a2a525d1de375ef2c3b50372 :: Workbench @ DESKTOP-0BOAD0F
+INFO [13:25:22 22-Oct-18 EDT][fox] Closed: 3229c3dcefa125d498e07198caad49ce607bfab730e3e42a9f <- b4589287be91f085fcb03d95cbe9dee5ba219c8f98133bc14e :: Workbench @ DESKTOP-0BOAD0F
+INFO [13:28:49 22-Oct-18 EDT][fox] Closed: 7c8410e4ea3b5a246d75876d5bd74c023cb08c3277994b7ce5 <- 56a56c7bd55092be56355182b9a2a525d1de375ef2c3b50372 :: Workbench @ DESKTOP-0BOAD0F
+WARNING [13:32:09 22-Oct-18 EDT][hx.px.cache] unresolved: station:|slot:/Programme/FS
+WARNING [13:32:09 22-Oct-18 EDT][hx.px.cache] unresolved: station:|slot:/Drivers/NdioNetwork/NdioBoard/points/E_Stop
+INFO [13:16:15 23-Oct-18 EDT][sys] Saving station...
+INFO [13:16:16 23-Oct-18 EDT][history.db] Saved history archive (91ms)
+INFO [13:16:19 23-Oct-18 EDT][sys] Saved /home/niagara/stations/MTI_MCU_Lab_8000/config.bog (3421ms)
+WARNING [10:40:22 24-Oct-18 EDT][sys.engine] System clock modified: -9858ms
+WARNING [11:47:04 24-Oct-18 EDT][hx.px.cache] unresolved: station:|slot:/Programme/FS
+WARNING [11:47:04 24-Oct-18 EDT][hx.px.cache] unresolved: station:|slot:/Drivers/NrioNetwork/NrioBoard/points/RTD2
+WARNING [11:47:04 24-Oct-18 EDT][hx.px.cache] unresolved: station:|slot:/Drivers/NdioNetwork/NdioBoard/points/E_Stop
+INFO [12:50:28 24-Oct-18 EDT][fox] Opened: e4322a7c3824f739c253d5510bfdd8e61aa0df5d685fab87e8 <- ae88ebd3c1d8043994e222c5511e7b75b6af9e34f2fcbc5539 :: Workbench @ DESKTOP-0BOAD0F
+INFO [12:50:58 24-Oct-18 EDT][fox] Closed: e4322a7c3824f739c253d5510bfdd8e61aa0df5d685fab87e8 <- ae88ebd3c1d8043994e222c5511e7b75b6af9e34f2fcbc5539 :: Workbench @ DESKTOP-0BOAD0F
+WARNING [12:51:26 24-Oct-18 EDT][hx.px.cache] unresolved: station:|slot:/Programme/FS
+WARNING [12:51:26 24-Oct-18 EDT][hx.px.cache] unresolved: station:|slot:/Drivers/NdioNetwork/NdioBoard/points/E_Stop
+INFO [13:16:07 24-Oct-18 EDT][sys] Saving station...
+INFO [13:16:08 24-Oct-18 EDT][history.db] Saved history archive (225ms)
+INFO [13:16:11 24-Oct-18 EDT][sys] Saved /home/niagara/stations/MTI_MCU_Lab_8000/config.bog (3534ms)
+WARNING [13:42:22 24-Oct-18 EDT][hx.px.cache] unresolved: station:|slot:/Programme/FS
+WARNING [13:42:22 24-Oct-18 EDT][hx.px.cache] unresolved: station:|slot:/Drivers/NrioNetwork/NrioBoard/points/RTD2
+WARNING [13:42:22 24-Oct-18 EDT][hx.px.cache] unresolved: station:|slot:/Drivers/NdioNetwork/NdioBoard/points/E_Stop
+WARNING [13:44:18 24-Oct-18 EDT][hx.px.cache] unresolved: station:|slot:/Programme/FS
+WARNING [13:44:18 24-Oct-18 EDT][hx.px.cache] unresolved: station:|slot:/Drivers/NdioNetwork/NdioBoard/points/E_Stop
+WARNING [12:32:52 25-Oct-18 EDT][hx.px.cache] unresolved: station:|slot:/Programme/FS
+WARNING [12:32:52 25-Oct-18 EDT][hx.px.cache] unresolved: station:|slot:/Drivers/NrioNetwork/NrioBoard/points/RTD2
+WARNING [12:32:52 25-Oct-18 EDT][hx.px.cache] unresolved: station:|slot:/Drivers/NdioNetwork/NdioBoard/points/E_Stop
+WARNING [12:33:16 25-Oct-18 EDT][hx.px.cache] unresolved: station:|slot:/Programme/FS
+WARNING [12:33:16 25-Oct-18 EDT][hx.px.cache] unresolved: station:|slot:/Drivers/NdioNetwork/NdioBoard/points/E_Stop
+WARNING [12:33:29 25-Oct-18 EDT][hx.px.cache] unresolved: station:|slot:/Programme/FS
+WARNING [12:33:29 25-Oct-18 EDT][hx.px.cache] unresolved: station:|slot:/Drivers/NdioNetwork/NdioBoard/points/E_Stop
+WARNING [12:46:22 25-Oct-18 EDT][hx.px.cache] unresolved: station:|slot:/Drivers/NrioNetwork/NrioBoard/points/RTD2
+WARNING [12:46:59 25-Oct-18 EDT][hx.px.cache] unresolved: station:|slot:/Programme/FS
+WARNING [12:46:59 25-Oct-18 EDT][hx.px.cache] unresolved: station:|slot:/Drivers/NdioNetwork/NdioBoard/points/E_Stop
+WARNING [12:54:51 25-Oct-18 EDT][hx.px.cache] unresolved: station:|slot:/Programme/FS
+WARNING [12:54:51 25-Oct-18 EDT][hx.px.cache] unresolved: station:|slot:/Drivers/NrioNetwork/NrioBoard/points/RTD2
+WARNING [12:54:51 25-Oct-18 EDT][hx.px.cache] unresolved: station:|slot:/Drivers/NdioNetwork/NdioBoard/points/E_Stop
+INFO [13:16:08 25-Oct-18 EDT][sys] Saving station...
+INFO [13:16:10 25-Oct-18 EDT][history.db] Saved history archive (124ms)
+INFO [13:16:12 25-Oct-18 EDT][sys] Saved /home/niagara/stations/MTI_MCU_Lab_8000/config.bog (2979ms)
+WARNING [13:16:48 25-Oct-18 EDT][hx.px.cache] unresolved: station:|slot:/Drivers/NrioNetwork/NrioBoard/points/RTD2
+WARNING [13:26:46 25-Oct-18 EDT][hx.px.cache] unresolved: station:|slot:/Programme/FS
+WARNING [13:26:46 25-Oct-18 EDT][hx.px.cache] unresolved: station:|slot:/Drivers/NdioNetwork/NdioBoard/points/E_Stop
+WARNING [13:45:23 25-Oct-18 EDT][hx.px.cache] unresolved: station:|slot:/Programme/FS
+WARNING [13:45:23 25-Oct-18 EDT][hx.px.cache] unresolved: station:|slot:/Drivers/NdioNetwork/NdioBoard/points/E_Stop
+WARNING [14:12:03 25-Oct-18 EDT][hx.px.cache] unresolved: station:|slot:/Drivers/NrioNetwork/NrioBoard/points/RTD2
+WARNING [14:15:58 25-Oct-18 EDT][hx.px.cache] unresolved: station:|slot:/Programme/FS
+WARNING [14:15:58 25-Oct-18 EDT][hx.px.cache] unresolved: station:|slot:/Drivers/NrioNetwork/NrioBoard/points/RTD2
+WARNING [14:15:58 25-Oct-18 EDT][hx.px.cache] unresolved: station:|slot:/Drivers/NdioNetwork/NdioBoard/points/E_Stop
+WARNING [14:23:00 25-Oct-18 EDT][hx.px.cache] unresolved: station:|slot:/Programme/FS
+WARNING [14:23:00 25-Oct-18 EDT][hx.px.cache] unresolved: station:|slot:/Drivers/NdioNetwork/NdioBoard/points/E_Stop
+WARNING [15:03:02 25-Oct-18 EDT][hx.px.cache] unresolved: station:|slot:/Programme/FS
+WARNING [15:03:02 25-Oct-18 EDT][hx.px.cache] unresolved: station:|slot:/Drivers/NdioNetwork/NdioBoard/points/E_Stop
+WARNING [10:40:19 26-Oct-18 EDT][sys.engine] System clock modified: -8874ms
+WARNING [12:58:52 26-Oct-18 EDT][hx.px.cache] unresolved: station:|slot:/Programme/FS
+WARNING [12:58:52 26-Oct-18 EDT][hx.px.cache] unresolved: station:|slot:/Drivers/NdioNetwork/NdioBoard/points/E_Stop
+INFO [13:16:01 26-Oct-18 EDT][sys] Saving station...
+INFO [13:16:02 26-Oct-18 EDT][history.db] Saved history archive (96ms)
+INFO [13:16:04 26-Oct-18 EDT][sys] Saved /home/niagara/stations/MTI_MCU_Lab_8000/config.bog (2713ms)
+WARNING [13:18:23 26-Oct-18 EDT][hx.px.cache] unresolved: station:|slot:/Programme/FS
+WARNING [13:18:23 26-Oct-18 EDT][hx.px.cache] unresolved: station:|slot:/Drivers/NdioNetwork/NdioBoard/points/E_Stop
+SEVERE [03:54:12 27-Oct-18 EDT][box] BOX Web Socket Error: oper @  ()
+java.net.SocketTimeoutException: Timeout on Read
+	at org.eclipse.jetty.websocket.common.io.AbstractWebSocketConnection.onReadTimeout(Unknown Source)
+	at org.eclipse.jetty.io.AbstractConnection.onFillInterestedFailed(Unknown Source)
+	at org.eclipse.jetty.websocket.common.io.AbstractWebSocketConnection.onFillInterestedFailed(Unknown Source)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.failed(Unknown Source)
+	at org.eclipse.jetty.io.FillInterest.onFail(Unknown Source)
+	at org.eclipse.jetty.io.AbstractEndPoint.onIdleExpired(Unknown Source)
+	at org.eclipse.jetty.io.IdleTimeout.checkIdleTimeout(Unknown Source)
+	at org.eclipse.jetty.io.IdleTimeout$1.run(Unknown Source)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+SEVERE [03:54:12 27-Oct-18 EDT][box] BOX WebSocket Closed due to error: Idle Timeout: oper @  ()
+SEVERE [03:54:24 27-Oct-18 EDT][box] BOX Web Socket Error: oper @  ()
+java.net.SocketTimeoutException: Timeout on Read
+	at org.eclipse.jetty.websocket.common.io.AbstractWebSocketConnection.onReadTimeout(Unknown Source)
+	at org.eclipse.jetty.io.AbstractConnection.onFillInterestedFailed(Unknown Source)
+	at org.eclipse.jetty.websocket.common.io.AbstractWebSocketConnection.onFillInterestedFailed(Unknown Source)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.failed(Unknown Source)
+	at org.eclipse.jetty.io.FillInterest.onFail(Unknown Source)
+	at org.eclipse.jetty.io.AbstractEndPoint.onIdleExpired(Unknown Source)
+	at org.eclipse.jetty.io.IdleTimeout.checkIdleTimeout(Unknown Source)
+	at org.eclipse.jetty.io.IdleTimeout$1.run(Unknown Source)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+SEVERE [03:54:24 27-Oct-18 EDT][box] BOX WebSocket Closed due to error: Idle Timeout: oper @  ()
+INFO [13:16:02 27-Oct-18 EDT][sys] Saving station...
+INFO [13:16:03 27-Oct-18 EDT][history.db] Saved history archive (92ms)
+INFO [13:16:05 27-Oct-18 EDT][sys] Saved /home/niagara/stations/MTI_MCU_Lab_8000/config.bog (2693ms)
+WARNING [10:40:16 28-Oct-18 EDT][sys.engine] System clock modified: -8829ms
+INFO [13:15:55 28-Oct-18 EDT][sys] Saving station...
+INFO [13:15:56 28-Oct-18 EDT][history.db] Saved history archive (114ms)
+INFO [13:15:59 28-Oct-18 EDT][sys] Saved /home/niagara/stations/MTI_MCU_Lab_8000/config.bog (3570ms)
+INFO [13:15:57 29-Oct-18 EDT][sys] Saving station...
+INFO [13:15:58 29-Oct-18 EDT][history.db] Saved history archive (96ms)
+INFO [13:16:00 29-Oct-18 EDT][sys] Saved /home/niagara/stations/MTI_MCU_Lab_8000/config.bog (2818ms)
+WARNING [16:13:28 29-Oct-18 EDT][hx.px.cache] unresolved: station:|slot:/Programme/FS
+WARNING [16:13:28 29-Oct-18 EDT][hx.px.cache] unresolved: station:|slot:/Drivers/NdioNetwork/NdioBoard/points/E_Stop
+WARNING [10:40:12 30-Oct-18 EDT][sys.engine] System clock modified: -9793ms
+INFO [13:15:48 30-Oct-18 EDT][sys] Saving station...
+INFO [13:15:49 30-Oct-18 EDT][history.db] Saved history archive (180ms)
+INFO [13:15:51 30-Oct-18 EDT][sys] Saved /home/niagara/stations/MTI_MCU_Lab_8000/config.bog (2971ms)
+WARNING [10:02:57 31-Oct-18 EDT][hx.px.cache] unresolved: station:|slot:/Programme/FS
+WARNING [10:02:57 31-Oct-18 EDT][hx.px.cache] unresolved: station:|slot:/Drivers/NdioNetwork/NdioBoard/points/E_Stop
+WARNING [10:04:41 31-Oct-18 EDT][hx.px.cache] unresolved: station:|slot:/Programme/FS
+WARNING [10:04:41 31-Oct-18 EDT][hx.px.cache] unresolved: station:|slot:/Drivers/NrioNetwork/NrioBoard/points/RTD2
+WARNING [10:04:41 31-Oct-18 EDT][hx.px.cache] unresolved: station:|slot:/Drivers/NdioNetwork/NdioBoard/points/E_Stop
+SEVERE [10:10:53 31-Oct-18 EDT][box] BOX WebSocket Closed due to error: WebSocket Read EOF: user @  ()
+WARNING [10:10:54 31-Oct-18 EDT][hx.px.cache] unresolved: station:|slot:/Programme/FS
+WARNING [10:10:54 31-Oct-18 EDT][hx.px.cache] unresolved: station:|slot:/Drivers/NdioNetwork/NdioBoard/points/E_Stop
+INFO [10:31:31 31-Oct-18 EDT][fox] Opened: a8214a1f0651d10bbf978e761675e0fa9b2b2610b06c109629 <- 57b3e7ae27abe44fa50e9f5575362b9aa1968b39ccd5748172 :: Workbench @ DESKTOP-0SEN9PQ
+WARNING [10:32:26 31-Oct-18 EDT][hx.px.cache] unresolved: station:|slot:/Programme/FS
+WARNING [10:32:26 31-Oct-18 EDT][hx.px.cache] unresolved: station:|slot:/Drivers/NdioNetwork/NdioBoard/points/E_Stop
+ERROR: SyncOp.commit: Set: /Services/UserService/user.autoLogoffSettings/autoLogoffEnabled -> false
+java.lang.IllegalStateException: Missing property autoLogoffSettings/autoLogoffEnabled
+	at javax.baja.sync.SetOp.getTarget(SetOp.java:79)
+	at javax.baja.sync.SetOp.getProperty(SetOp.java:93)
+	at javax.baja.sync.SetOp.commit(SetOp.java:102)
+	at javax.baja.sync.SyncBuffer.commitOp(SyncBuffer.java:286)
+	at javax.baja.sync.SyncBuffer.commit(SyncBuffer.java:233)
+	at com.tridium.fox.sys.broker.BBrokerChannel.syncToMaster(BBrokerChannel.java:2269)
+	at com.tridium.fox.sys.broker.BBrokerChannel.circuitOpened(BBrokerChannel.java:268)
+	at com.tridium.fox.sys.BFoxConnection.circuitOpened(BFoxConnection.java:464)
+	at com.tridium.fox.session.SessionCircuits$ServiceThread.run(SessionCircuits.java:316)
+	at java.lang.Thread.run(Thread.java:745)
+java.lang.IllegalStateException: Missing property autoLogoffSettings/autoLogoffEnabled
+	at javax.baja.sync.SetOp.getTarget(SetOp.java:79)
+	at javax.baja.sync.SetOp.getProperty(SetOp.java:93)
+	at javax.baja.sync.SetOp.commit(SetOp.java:102)
+	at javax.baja.sync.SyncBuffer.commitOp(SyncBuffer.java:286)
+	at javax.baja.sync.SyncBuffer.commit(SyncBuffer.java:233)
+	at com.tridium.fox.sys.broker.BBrokerChannel.syncToMaster(BBrokerChannel.java:2269)
+	at com.tridium.fox.sys.broker.BBrokerChannel.circuitOpened(BBrokerChannel.java:268)
+	at com.tridium.fox.sys.BFoxConnection.circuitOpened(BFoxConnection.java:464)
+	at com.tridium.fox.session.SessionCircuits$ServiceThread.run(SessionCircuits.java:316)
+	at java.lang.Thread.run(Thread.java:745)
+ERROR: SyncOp.commit: Set: /Services/UserService/user.autoLogoffSettings/autoLogoffEnabled -> false
+java.lang.IllegalStateException: Missing property autoLogoffSettings/autoLogoffEnabled
+	at javax.baja.sync.SetOp.getTarget(SetOp.java:79)
+	at javax.baja.sync.SetOp.getProperty(SetOp.java:93)
+	at javax.baja.sync.SetOp.commit(SetOp.java:102)
+	at javax.baja.sync.SyncBuffer.commitOp(SyncBuffer.java:286)
+	at javax.baja.sync.SyncBuffer.commit(SyncBuffer.java:233)
+	at com.tridium.fox.sys.broker.BBrokerChannel.syncToMaster(BBrokerChannel.java:2269)
+	at com.tridium.fox.sys.broker.BBrokerChannel.circuitOpened(BBrokerChannel.java:268)
+	at com.tridium.fox.sys.BFoxConnection.circuitOpened(BFoxConnection.java:464)
+	at com.tridium.fox.session.SessionCircuits$ServiceThread.run(SessionCircuits.java:316)
+	at java.lang.Thread.run(Thread.java:745)
+java.lang.IllegalStateException: Missing property autoLogoffSettings/autoLogoffEnabled
+	at javax.baja.sync.SetOp.getTarget(SetOp.java:79)
+	at javax.baja.sync.SetOp.getProperty(SetOp.java:93)
+	at javax.baja.sync.SetOp.commit(SetOp.java:102)
+	at javax.baja.sync.SyncBuffer.commitOp(SyncBuffer.java:286)
+	at javax.baja.sync.SyncBuffer.commit(SyncBuffer.java:233)
+	at com.tridium.fox.sys.broker.BBrokerChannel.syncToMaster(BBrokerChannel.java:2269)
+	at com.tridium.fox.sys.broker.BBrokerChannel.circuitOpened(BBrokerChannel.java:268)
+	at com.tridium.fox.sys.BFoxConnection.circuitOpened(BFoxConnection.java:464)
+	at com.tridium.fox.session.SessionCircuits$ServiceThread.run(SessionCircuits.java:316)
+	at java.lang.Thread.run(Thread.java:745)
+ERROR: SyncOp.commit: Set: /Services/UserService/user.autoLogoffSettings/autoLogoffEnabled -> false
+java.lang.IllegalStateException: Missing property autoLogoffSettings/autoLogoffEnabled
+	at javax.baja.sync.SetOp.getTarget(SetOp.java:79)
+	at javax.baja.sync.SetOp.getProperty(SetOp.java:93)
+	at javax.baja.sync.SetOp.commit(SetOp.java:102)
+	at javax.baja.sync.SyncBuffer.commitOp(SyncBuffer.java:286)
+	at javax.baja.sync.SyncBuffer.commit(SyncBuffer.java:233)
+	at com.tridium.fox.sys.broker.BBrokerChannel.syncToMaster(BBrokerChannel.java:2269)
+	at com.tridium.fox.sys.broker.BBrokerChannel.circuitOpened(BBrokerChannel.java:268)
+	at com.tridium.fox.sys.BFoxConnection.circuitOpened(BFoxConnection.java:464)
+	at com.tridium.fox.session.SessionCircuits$ServiceThread.run(SessionCircuits.java:316)
+	at java.lang.Thread.run(Thread.java:745)
+java.lang.IllegalStateException: Missing property autoLogoffSettings/autoLogoffEnabled
+	at javax.baja.sync.SetOp.getTarget(SetOp.java:79)
+	at javax.baja.sync.SetOp.getProperty(SetOp.java:93)
+	at javax.baja.sync.SetOp.commit(SetOp.java:102)
+	at javax.baja.sync.SyncBuffer.commitOp(SyncBuffer.java:286)
+	at javax.baja.sync.SyncBuffer.commit(SyncBuffer.java:233)
+	at com.tridium.fox.sys.broker.BBrokerChannel.syncToMaster(BBrokerChannel.java:2269)
+	at com.tridium.fox.sys.broker.BBrokerChannel.circuitOpened(BBrokerChannel.java:268)
+	at com.tridium.fox.sys.BFoxConnection.circuitOpened(BFoxConnection.java:464)
+	at com.tridium.fox.session.SessionCircuits$ServiceThread.run(SessionCircuits.java:316)
+	at java.lang.Thread.run(Thread.java:745)
+ERROR: SyncOp.commit: Set: /Services/UserService/user.autoLogoffSettings/autoLogoffEnabled -> false
+java.lang.IllegalStateException: Missing property autoLogoffSettings/autoLogoffEnabled
+	at javax.baja.sync.SetOp.getTarget(SetOp.java:79)
+	at javax.baja.sync.SetOp.getProperty(SetOp.java:93)
+	at javax.baja.sync.SetOp.commit(SetOp.java:102)
+	at javax.baja.sync.SyncBuffer.commitOp(SyncBuffer.java:286)
+	at javax.baja.sync.SyncBuffer.commit(SyncBuffer.java:233)
+	at com.tridium.fox.sys.broker.BBrokerChannel.syncToMaster(BBrokerChannel.java:2269)
+	at com.tridium.fox.sys.broker.BBrokerChannel.circuitOpened(BBrokerChannel.java:268)
+	at com.tridium.fox.sys.BFoxConnection.circuitOpened(BFoxConnection.java:464)
+	at com.tridium.fox.session.SessionCircuits$ServiceThread.run(SessionCircuits.java:316)
+	at java.lang.Thread.run(Thread.java:745)
+java.lang.IllegalStateException: Missing property autoLogoffSettings/autoLogoffEnabled
+	at javax.baja.sync.SetOp.getTarget(SetOp.java:79)
+	at javax.baja.sync.SetOp.getProperty(SetOp.java:93)
+	at javax.baja.sync.SetOp.commit(SetOp.java:102)
+	at javax.baja.sync.SyncBuffer.commitOp(SyncBuffer.java:286)
+	at javax.baja.sync.SyncBuffer.commit(SyncBuffer.java:233)
+	at com.tridium.fox.sys.broker.BBrokerChannel.syncToMaster(BBrokerChannel.java:2269)
+	at com.tridium.fox.sys.broker.BBrokerChannel.circuitOpened(BBrokerChannel.java:268)
+	at com.tridium.fox.sys.BFoxConnection.circuitOpened(BFoxConnection.java:464)
+	at com.tridium.fox.session.SessionCircuits$ServiceThread.run(SessionCircuits.java:316)
+	at java.lang.Thread.run(Thread.java:745)
+ERROR: SyncOp.commit: Set: /Services/UserService/user.autoLogoffSettings/autoLogoffEnabled -> false
+java.lang.IllegalStateException: Missing property autoLogoffSettings/autoLogoffEnabled
+	at javax.baja.sync.SetOp.getTarget(SetOp.java:79)
+	at javax.baja.sync.SetOp.getProperty(SetOp.java:93)
+	at javax.baja.sync.SetOp.commit(SetOp.java:102)
+	at javax.baja.sync.SyncBuffer.commitOp(SyncBuffer.java:286)
+	at javax.baja.sync.SyncBuffer.commit(SyncBuffer.java:233)
+	at com.tridium.fox.sys.broker.BBrokerChannel.syncToMaster(BBrokerChannel.java:2269)
+	at com.tridium.fox.sys.broker.BBrokerChannel.circuitOpened(BBrokerChannel.java:268)
+	at com.tridium.fox.sys.BFoxConnection.circuitOpened(BFoxConnection.java:464)
+	at com.tridium.fox.session.SessionCircuits$ServiceThread.run(SessionCircuits.java:316)
+	at java.lang.Thread.run(Thread.java:745)
+java.lang.IllegalStateException: Missing property autoLogoffSettings/autoLogoffEnabled
+	at javax.baja.sync.SetOp.getTarget(SetOp.java:79)
+	at javax.baja.sync.SetOp.getProperty(SetOp.java:93)
+	at javax.baja.sync.SetOp.commit(SetOp.java:102)
+	at javax.baja.sync.SyncBuffer.commitOp(SyncBuffer.java:286)
+	at javax.baja.sync.SyncBuffer.commit(SyncBuffer.java:233)
+	at com.tridium.fox.sys.broker.BBrokerChannel.syncToMaster(BBrokerChannel.java:2269)
+	at com.tridium.fox.sys.broker.BBrokerChannel.circuitOpened(BBrokerChannel.java:268)
+	at com.tridium.fox.sys.BFoxConnection.circuitOpened(BFoxConnection.java:464)
+	at com.tridium.fox.session.SessionCircuits$ServiceThread.run(SessionCircuits.java:316)
+	at java.lang.Thread.run(Thread.java:745)
+INFO [10:41:04 31-Oct-18 EDT][fox] Closed: a8214a1f0651d10bbf978e761675e0fa9b2b2610b06c109629 <- 57b3e7ae27abe44fa50e9f5575362b9aa1968b39ccd5748172 :: Workbench @ DESKTOP-0SEN9PQ
+INFO [10:44:58 31-Oct-18 EDT][fox] Opened: 60137a3cde9e6eb49733bf8cc1981525afba96f877d8842fa9 <- 6a1b3cc82b7a6c89bb103e390c25c217ac67d029578af37632 :: Workbench @ DESKTOP-0SEN9PQ
+WARNING [10:46:03 31-Oct-18 EDT][sys.xml] Type "baja:AutoLogoffSettings" not found: null [3:39]
+javax.baja.xml.XException: Unable to instantiate AutoLogoffSettings [6:4]
+	at javax.baja.io.ValueDocDecoder$BogDecoderPlugin.err(ValueDocDecoder.java:1362)
+	at javax.baja.io.ValueDocDecoder.err(ValueDocDecoder.java:467)
+	at javax.baja.io.ValueDocDecoder.parseSlot(ValueDocDecoder.java:763)
+	at javax.baja.io.ValueDocDecoder.decode(ValueDocDecoder.java:288)
+	at javax.baja.sync.SetOp.decode(SetOp.java:181)
+	at javax.baja.sync.SyncBuffer.decode(SyncBuffer.java:149)
+	at com.tridium.fox.sys.broker.BBrokerChannel.syncToMaster(BBrokerChannel.java:2264)
+	at com.tridium.fox.sys.broker.BBrokerChannel.circuitOpened(BBrokerChannel.java:268)
+	at com.tridium.fox.sys.BFoxConnection.circuitOpened(BFoxConnection.java:464)
+	at com.tridium.fox.session.SessionCircuits$ServiceThread.run(SessionCircuits.java:316)
+	at java.lang.Thread.run(Thread.java:745)
+WARNING [10:46:52 31-Oct-18 EDT][hx.px.cache] unresolved: station:|slot:/Programme/FS
+WARNING [10:46:52 31-Oct-18 EDT][hx.px.cache] unresolved: station:|slot:/Drivers/NdioNetwork/NdioBoard/points/E_Stop
+niagara>INFO [11:07:06 31-Oct-18 EDT][sys] Saving station...
+INFO [11:07:07 31-Oct-18 EDT][history.db] Saved history archive (93ms)
+INFO [11:07:09 31-Oct-18 EDT][sys] Saved /home/niagara/stations/MTI_MCU_Lab_8000/config.bog (2792ms)
+INFO [11:09:04 31-Oct-18 EDT][console] Quit
+INFO [11:09:04 31-Oct-18 EDT][sys] Saving station...
+INFO [11:09:05 31-Oct-18 EDT][history.db] Saved history archive (195ms)
+INFO [11:09:07 31-Oct-18 EDT][sys] Saved /home/niagara/stations/MTI_MCU_Lab_8000/config.bog (3348ms)
+INFO [11:09:07 31-Oct-18 EDT][fox] Closed: 60137a3cde9e6eb49733bf8cc1981525afba96f877d8842fa9 <- 6a1b3cc82b7a6c89bb103e390c25c217ac67d029578af37632 :: Workbench @ DESKTOP-0SEN9PQ
+devctl rx frame failed: No error
+devctl DCMD_ACTRL_IO_STATUS_CHANGE failed: No error
+INFO [11:09:08 31-Oct-18 EDT][NrioNetwork.unsolicited] NrioUnsolicetedReceive thread stopped.
+INFO [11:09:08 31-Oct-18 EDT][sys] Station stopped
+INFO [11:09:08 31-Oct-18 EDT][fox] Service stopped
+INFO [11:09:08 31-Oct-18 EDT][fox] FOX server stopped on port [1911]
+INFO [11:09:09 31-Oct-18 EDT][web] Jetty stopped.
+INFO [11:09:11 31-Oct-18 EDT][sys] Services stopped
+INFO [11:09:11 31-Oct-18 EDT][sys] *** Station shutdown ***
+
+
